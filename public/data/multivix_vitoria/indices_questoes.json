@@ -1,0 +1,1948 @@
+{
+  "por_ciclo": {
+    "M4": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      53,
+      54,
+      56,
+      58,
+      62,
+      63,
+      65,
+      66,
+      67,
+      68,
+      70,
+      72,
+      73,
+      74,
+      75,
+      76,
+      79,
+      80,
+      81,
+      82,
+      83,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "M2": [
+      15,
+      16,
+      52,
+      69,
+      71
+    ],
+    "M6": [
+      17,
+      21,
+      55,
+      64,
+      77,
+      78,
+      84
+    ]
+  },
+  "por_bloom": {
+    "Analisar": [
+      2,
+      4,
+      5,
+      8,
+      9,
+      10,
+      17,
+      18,
+      23,
+      24,
+      29,
+      31,
+      33,
+      34,
+      35,
+      37,
+      38,
+      42,
+      46,
+      48,
+      51,
+      58,
+      63,
+      65,
+      72,
+      80,
+      86,
+      88,
+      89,
+      94,
+      96,
+      97,
+      98,
+      100
+    ],
+    "Aplicar": [
+      3,
+      6,
+      7,
+      11,
+      12,
+      13,
+      14,
+      15,
+      20,
+      22,
+      26,
+      27,
+      30,
+      32,
+      36,
+      39,
+      40,
+      41,
+      44,
+      45,
+      47,
+      53,
+      54,
+      62,
+      66,
+      67,
+      68,
+      70,
+      73,
+      74,
+      76,
+      79,
+      81,
+      82,
+      83,
+      85,
+      87,
+      90,
+      91,
+      92,
+      95,
+      99
+    ],
+    "Lembrar": [
+      16,
+      28,
+      52,
+      69
+    ],
+    "Avaliar": [
+      19,
+      21,
+      43,
+      49,
+      50,
+      55,
+      64,
+      75,
+      77,
+      78,
+      84
+    ],
+    "Entender": [
+      56,
+      71
+    ]
+  },
+  "por_competencia": {
+    "C-II": [
+      2,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      14,
+      18,
+      23,
+      26,
+      37,
+      38,
+      45,
+      46,
+      52,
+      53,
+      58,
+      68,
+      69,
+      71,
+      74,
+      81,
+      86,
+      94,
+      96,
+      97,
+      98
+    ],
+    "C-III": [
+      3,
+      11,
+      15,
+      31,
+      34,
+      48,
+      51,
+      65,
+      87,
+      88
+    ],
+    "C-VIII": [
+      6,
+      12,
+      16,
+      20,
+      47,
+      55,
+      56,
+      62,
+      63,
+      70,
+      84
+    ],
+    "C-IV": [
+      13,
+      19,
+      22,
+      27,
+      29,
+      30,
+      32,
+      33,
+      35,
+      36,
+      39,
+      40,
+      43,
+      49,
+      50,
+      54,
+      72,
+      73,
+      75,
+      76,
+      82,
+      83,
+      90,
+      91,
+      95,
+      99,
+      100
+    ],
+    "C-V": [
+      17,
+      21,
+      24,
+      41,
+      42,
+      64,
+      66,
+      67,
+      79,
+      80,
+      85,
+      89,
+      92
+    ],
+    "C-XII": [
+      28
+    ],
+    "C-VI": [
+      44
+    ],
+    "C-I": [
+      77,
+      78
+    ]
+  },
+  "por_dominio": {
+    "D-IX": [
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      16,
+      17,
+      18,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      41,
+      42,
+      43,
+      45,
+      46,
+      48,
+      50,
+      51,
+      53,
+      58,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      71,
+      72,
+      73,
+      74,
+      76,
+      79,
+      80,
+      81,
+      83,
+      85,
+      86,
+      87,
+      88,
+      89,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "D-I": [
+      2,
+      15,
+      18,
+      65,
+      74
+    ],
+    "D-X": [
+      3,
+      5,
+      7,
+      8,
+      13,
+      17,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      27,
+      29,
+      30,
+      32,
+      33,
+      35,
+      36,
+      37,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      48,
+      49,
+      50,
+      53,
+      54,
+      55,
+      58,
+      64,
+      66,
+      67,
+      72,
+      73,
+      75,
+      76,
+      79,
+      80,
+      82,
+      83,
+      85,
+      89,
+      90,
+      91,
+      92,
+      95,
+      96,
+      99
+    ],
+    "D-VI": [
+      4,
+      14,
+      52,
+      69,
+      71
+    ],
+    "D-XI": [
+      6,
+      11,
+      12,
+      20,
+      32,
+      36,
+      39,
+      40,
+      44,
+      47,
+      49,
+      54,
+      73,
+      76,
+      82,
+      83,
+      87,
+      89,
+      90,
+      91,
+      94
+    ],
+    "D-XIV": [
+      6,
+      28,
+      35,
+      47,
+      70,
+      78,
+      84,
+      100
+    ],
+    "D-II": [
+      9,
+      10,
+      16,
+      19,
+      52,
+      97
+    ],
+    "D-XIII": [
+      12,
+      55,
+      63,
+      75,
+      78
+    ],
+    "D-XVIII": [
+      13
+    ],
+    "D-XVII": [
+      13,
+      23,
+      33,
+      45,
+      56,
+      62,
+      68,
+      70,
+      84,
+      90
+    ],
+    "D-III": [
+      20,
+      45,
+      77
+    ],
+    "D-IV": [
+      23,
+      28,
+      84
+    ],
+    "D-XVI": [
+      34,
+      40,
+      63
+    ],
+    "D-XX": [
+      34,
+      63
+    ],
+    "D-VII": [
+      55,
+      77
+    ],
+    "D-XV": [
+      56
+    ],
+    "D-VIII": [
+      62
+    ],
+    "D-V": [
+      77,
+      78
+    ]
+  },
+  "por_cenario": {
+    "URG": [
+      2,
+      3,
+      7,
+      9,
+      10,
+      17,
+      21,
+      23,
+      24,
+      26,
+      28,
+      29,
+      31,
+      37,
+      38,
+      40,
+      41,
+      42,
+      43,
+      53,
+      58,
+      64,
+      66,
+      67,
+      72,
+      79,
+      85,
+      86,
+      89,
+      90,
+      91,
+      92,
+      94,
+      98
+    ],
+    "APS": [
+      4,
+      5,
+      6,
+      8,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      19,
+      20,
+      21,
+      22,
+      23,
+      26,
+      27,
+      30,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      39,
+      40,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      52,
+      54,
+      55,
+      56,
+      58,
+      62,
+      63,
+      65,
+      68,
+      69,
+      70,
+      73,
+      75,
+      76,
+      77,
+      78,
+      81,
+      83,
+      84,
+      86,
+      87,
+      90,
+      95,
+      96,
+      97,
+      100
+    ],
+    "CRON": [
+      4,
+      6,
+      8,
+      15,
+      18,
+      22,
+      31,
+      36,
+      46,
+      48,
+      49,
+      50,
+      51,
+      72,
+      74,
+      75,
+      88,
+      98
+    ],
+    "MAT": [
+      11,
+      39,
+      44,
+      80,
+      82,
+      83,
+      89,
+      99
+    ],
+    "RAPS": [
+      28,
+      64,
+      71
+    ],
+    "GS": [
+      34
+    ]
+  },
+  "por_eixo_cognitivo": {
+    "E2": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      17,
+      18,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      45,
+      46,
+      47,
+      48,
+      50,
+      51,
+      53,
+      54,
+      58,
+      62,
+      63,
+      65,
+      66,
+      67,
+      68,
+      70,
+      72,
+      73,
+      74,
+      76,
+      79,
+      80,
+      81,
+      82,
+      83,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "E1": [
+      15,
+      16,
+      28,
+      52,
+      56,
+      69,
+      71
+    ],
+    "E3": [
+      19,
+      21,
+      43,
+      49,
+      55,
+      64,
+      75,
+      77,
+      78,
+      84
+    ]
+  },
+  "por_nivel_cognitivo": {
+    "NC2": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      17,
+      18,
+      20,
+      22,
+      23,
+      24,
+      26,
+      27,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      44,
+      45,
+      46,
+      47,
+      48,
+      51,
+      53,
+      54,
+      58,
+      62,
+      63,
+      65,
+      66,
+      67,
+      68,
+      70,
+      72,
+      73,
+      74,
+      76,
+      79,
+      81,
+      82,
+      83,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "NC1": [
+      15,
+      16,
+      28,
+      52,
+      56,
+      69,
+      71
+    ],
+    "NC3": [
+      19,
+      21,
+      43,
+      49,
+      50,
+      55,
+      64,
+      75,
+      77,
+      78,
+      80,
+      84
+    ]
+  },
+  "por_eixo_transversal": {
+    "AT": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      58,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100
+    ],
+    "GS": [
+      3,
+      6,
+      12,
+      13,
+      21,
+      23,
+      24,
+      26,
+      28,
+      33,
+      34,
+      35,
+      39,
+      40,
+      45,
+      47,
+      50,
+      56,
+      62,
+      63,
+      64,
+      66,
+      67,
+      68,
+      70,
+      79,
+      84,
+      90,
+      99,
+      100
+    ],
+    "ES": [
+      20,
+      27,
+      55,
+      63,
+      70,
+      73,
+      77,
+      78
+    ]
+  },
+  "por_area_formacao": {
+    "PED": [
+      2,
+      9,
+      14,
+      16,
+      23,
+      37,
+      42,
+      47,
+      52,
+      66,
+      73,
+      80,
+      87,
+      92,
+      95,
+      97
+    ],
+    "CIR": [
+      3,
+      10,
+      17,
+      24,
+      30,
+      31,
+      43,
+      53,
+      67,
+      74,
+      81,
+      98
+    ],
+    "GO": [
+      4,
+      11,
+      18,
+      32,
+      39,
+      44,
+      49,
+      54,
+      68,
+      75,
+      82,
+      83,
+      89,
+      94,
+      99,
+      100
+    ],
+    "CLIN": [
+      5,
+      8,
+      15,
+      19,
+      20,
+      22,
+      26,
+      29,
+      33,
+      36,
+      38,
+      40,
+      41,
+      46,
+      48,
+      50,
+      51,
+      58,
+      65,
+      72,
+      76,
+      79,
+      85,
+      86,
+      88,
+      90,
+      91
+    ],
+    "SC": [
+      6,
+      13,
+      34,
+      56,
+      62,
+      63,
+      70,
+      77,
+      84
+    ],
+    "SM": [
+      7,
+      21,
+      28,
+      64,
+      69,
+      71
+    ],
+    "MFC": [
+      12,
+      27,
+      35,
+      45,
+      55,
+      78,
+      96
+    ]
+  },
+  "por_area": {
+    "Pediatria": [
+      2,
+      9,
+      14,
+      16,
+      23,
+      37,
+      42,
+      47,
+      52,
+      66,
+      73,
+      80,
+      87,
+      92,
+      95,
+      97
+    ],
+    "Cirurgia": [
+      3,
+      10,
+      17,
+      24,
+      30,
+      31,
+      43,
+      53,
+      67,
+      74,
+      81,
+      98
+    ],
+    "Ginecologia e Obstetrícia": [
+      4,
+      11,
+      18,
+      32,
+      39,
+      44,
+      49,
+      54,
+      68,
+      75,
+      82,
+      83,
+      89,
+      94,
+      96,
+      99,
+      100
+    ],
+    "Dermatologia": [
+      5
+    ],
+    "Medicina Preventiva": [
+      6,
+      12,
+      13,
+      34,
+      35,
+      45,
+      56,
+      62,
+      63,
+      70,
+      77,
+      78,
+      84
+    ],
+    "Psiquiatria": [
+      7,
+      28,
+      69
+    ],
+    "Clínica Médica": [
+      8,
+      15,
+      19,
+      20,
+      21,
+      22,
+      26,
+      29,
+      33,
+      36,
+      38,
+      40,
+      41,
+      46,
+      48,
+      50,
+      51,
+      55,
+      58,
+      64,
+      65,
+      71,
+      72,
+      76,
+      79,
+      85,
+      86,
+      88,
+      90,
+      91
+    ],
+    "Ortopedia": [
+      27
+    ]
+  },
+  "por_subespecialidade": {
+    "Medicina Intensiva Pediátrica": [
+      2,
+      9,
+      42
+    ],
+    "Cirurgia Geral": [
+      3,
+      10,
+      17,
+      24,
+      67
+    ],
+    "Ginecologia Geral": [
+      4,
+      49,
+      54,
+      75,
+      96
+    ],
+    "Infecções Cutâneas": [
+      5
+    ],
+    "Epidemiologia": [
+      6,
+      56,
+      63
+    ],
+    "Psicofarmacologia": [
+      7
+    ],
+    "Reumatologia": [
+      8,
+      46
+    ],
+    "Obstetrícia": [
+      11,
+      32,
+      39,
+      44,
+      82,
+      89,
+      99,
+      100
+    ],
+    "Saúde Coletiva": [
+      12,
+      35,
+      45,
+      70,
+      77,
+      78,
+      84
+    ],
+    "Saúde Ocupacional e Medicina Legal": [
+      13,
+      62
+    ],
+    "Neurologia Pediátrica": [
+      14,
+      73
+    ],
+    "Nefrologia": [
+      15
+    ],
+    "Medicina do Crescimento e Desenvolvimento": [
+      16,
+      52,
+      87,
+      97
+    ],
+    "Ginecologia Endócrina": [
+      18
+    ],
+    "Cardiologia": [
+      19,
+      91
+    ],
+    "Infectologia": [
+      20,
+      26,
+      33,
+      40,
+      76,
+      90
+    ],
+    "Psiquiatria": [
+      21,
+      64,
+      71
+    ],
+    "Neurologia": [
+      22,
+      29,
+      86
+    ],
+    "Emergências Pediátricas": [
+      23
+    ],
+    "Patologias da Coluna": [
+      27
+    ],
+    "Dependência Química": [
+      28,
+      69
+    ],
+    "Cirurgia Pediátrica": [
+      30
+    ],
+    "Cirurgia do Aparelho Digestivo": [
+      31,
+      43,
+      81,
+      98
+    ],
+    "Bioestatística": [
+      34
+    ],
+    "Geriatria": [
+      36,
+      55
+    ],
+    "Reumatologia Pediátrica": [
+      37
+    ],
+    "Gastroenterologia": [
+      38,
+      51,
+      72,
+      88
+    ],
+    "Endocrinologia": [
+      41,
+      50,
+      58
+    ],
+    "Infectologia Pediátrica": [
+      47
+    ],
+    "Pneumologia": [
+      48
+    ],
+    "Neurocirurgia": [
+      53
+    ],
+    "Hematologia": [
+      65
+    ],
+    "Endocrinologia Pediátrica": [
+      66
+    ],
+    "Oncoginecologia": [
+      68,
+      83,
+      94
+    ],
+    "Cirurgia de Cabeça e Pescoço": [
+      74
+    ],
+    "Emergência": [
+      79,
+      85
+    ],
+    "Neonatologia": [
+      80
+    ],
+    "Pneumologia Pediátrica": [
+      92
+    ],
+    "Hematologia Pediátrica": [
+      95
+    ]
+  },
+  "por_tema": {
+    "Distúrbios Ácido-Base": [
+      2
+    ],
+    "Trauma e Emergência": [
+      3,
+      17,
+      67
+    ],
+    "Dor pélvica": [
+      4
+    ],
+    "Micoses Superficiais": [
+      5
+    ],
+    "Fundamentos da Epidemiologia": [
+      6
+    ],
+    "Antipsicóticos": [
+      7
+    ],
+    "Artrites Inflamatórias": [
+      8
+    ],
+    "Sepse": [
+      9
+    ],
+    "Hérnias da parede abdominal": [
+      10
+    ],
+    "Infecções na Gestação": [
+      11
+    ],
+    "Programas de Rastreamento": [
+      12
+    ],
+    "Saúde do Trabalhador": [
+      13
+    ],
+    "Transtornos do Neurodesenvolvimento": [
+      14
+    ],
+    "Doenças Glomerulares": [
+      15
+    ],
+    "Crescimento Infantil": [
+      16,
+      97
+    ],
+    "Amenorreias": [
+      18
+    ],
+    "Hipertensão Arterial Sistêmica (HAS)": [
+      19
+    ],
+    "HIV/AIDS": [
+      20,
+      76
+    ],
+    "Transtornos Alimentares": [
+      21
+    ],
+    "Distúrbios do Movimento": [
+      22
+    ],
+    "Violência na Infância": [
+      23
+    ],
+    "Abdome Agudo": [
+      24
+    ],
+    "Doenças Virais": [
+      26
+    ],
+    "Lombalgia mecânica e neurogênica": [
+      27
+    ],
+    "Outras Substâncias Psicoativas": [
+      28
+    ],
+    "Doenças Cerebrovasculares": [
+      29
+    ],
+    "Urologia Pediátrica": [
+      30
+    ],
+    "Pancreatobiliar": [
+      31,
+      98
+    ],
+    "Distúrbios Hipertensivos na Gestação": [
+      32
+    ],
+    "Tuberculose": [
+      33
+    ],
+    "Testes Diagnósticos": [
+      34
+    ],
+    "Políticas de Saúde para Populações Específicas": [
+      35,
+      45,
+      70,
+      77,
+      78,
+      84
+    ],
+    "Síndromes Geriátricas": [
+      36
+    ],
+    "Doenças Reumáticas": [
+      37
+    ],
+    "Doenças Pancreáticas": [
+      38,
+      88
+    ],
+    "Gestação Pós-Termo": [
+      39
+    ],
+    "Parasitoses Sistêmicas": [
+      40
+    ],
+    "Diabetes Mellitus": [
+      41,
+      50
+    ],
+    "Choque": [
+      42
+    ],
+    "Coloproctologia": [
+      43,
+      81
+    ],
+    "Atendimento ao Trabalho de Parto": [
+      44
+    ],
+    "Espondiloartrites": [
+      46
+    ],
+    "Imunizações": [
+      47
+    ],
+    "Doenças da Pleura e Mediastino": [
+      48
+    ],
+    "Contracepção": [
+      49,
+      54,
+      75
+    ],
+    "Doenças Autoimunes do Fígado": [
+      51
+    ],
+    "Desenvolvimento Infantil": [
+      52
+    ],
+    "Trauma Cranioencefálico (TCE)": [
+      53
+    ],
+    "Prevenção e Promoção de Saúde": [
+      55
+    ],
+    "Vigilância em Saúde": [
+      56
+    ],
+    "Doenças da Tireoide": [
+      58
+    ],
+    "Medicina Legal": [
+      62
+    ],
+    "Desenhos de Estudos Epidemiológicos": [
+      63
+    ],
+    "Emergências Psiquiátricas": [
+      64
+    ],
+    "Distúrbios da Coagulação": [
+      65
+    ],
+    "Diabetes": [
+      66
+    ],
+    "Lesões precursoras": [
+      68,
+      83
+    ],
+    "Alcoolismo": [
+      69
+    ],
+    "Transtornos Ansiosos": [
+      71
+    ],
+    "Síndromes Disabsortivas": [
+      72
+    ],
+    "Epilepsias": [
+      73
+    ],
+    "Tireoide e Paratireoide": [
+      74
+    ],
+    "Choque e Instabilidade Hemodinâmica": [
+      79
+    ],
+    "Reanimação Neonatal": [
+      80
+    ],
+    "Parto Prematuro": [
+      82
+    ],
+    "Intoxicações Agudas": [
+      85
+    ],
+    "Cefaleias e Algias Craniofaciais": [
+      86
+    ],
+    "Obesidade Infantil": [
+      87
+    ],
+    "Sangramento na Segunda Metade da Gestação": [
+      89
+    ],
+    "Zoonoses": [
+      90
+    ],
+    "Síndrome Coronariana Aguda (SCA)": [
+      91
+    ],
+    "Asma": [
+      92
+    ],
+    "Hiperplasia endometrial": [
+      94
+    ],
+    "Anemias": [
+      95
+    ],
+    "Infecções do trato genital": [
+      96
+    ],
+    "Amniorrexe Prematura": [
+      99
+    ],
+    "Cuidados Pré-Natais": [
+      100
+    ]
+  },
+  "por_subtema": {
+    "Acidose Metabólica": [
+      2
+    ],
+    "Abordagem inicial ao politraumatizado": [
+      3
+    ],
+    "Dismenorreia": [
+      4
+    ],
+    "Prevenção Primária": [
+      6
+    ],
+    "Secundária e Terciária": [
+      6
+    ],
+    "Artrite Reumatoide": [
+      8
+    ],
+    "Reconhecimento Precoce da Sepse na Pediatria": [
+      9
+    ],
+    "Hernia Femoral": [
+      10
+    ],
+    "DSTs e HIV na gestação": [
+      11
+    ],
+    "Programas Recomendados pelo Ministério da Saúde": [
+      12
+    ],
+    "Intoxicações Ocupacionais": [
+      13
+    ],
+    "Transtorno de Déficit de Atenção e Hiperatividade": [
+      14
+    ],
+    "Síndrome Nefrótica Primária": [
+      15
+    ],
+    "Curvas de Crescimento": [
+      16
+    ],
+    "Trauma torácico": [
+      17
+    ],
+    "Amenorreia primária": [
+      18
+    ],
+    "Hipertensão Primária": [
+      19
+    ],
+    "Profilaxias (PrEP e PEP) de HIV": [
+      20,
+      76
+    ],
+    "Anorexia Nervosa": [
+      21
+    ],
+    "Doença de Parkinson": [
+      22
+    ],
+    "Abuso Físico": [
+      23
+    ],
+    "Abdome Agudo Inflamatório": [
+      24
+    ],
+    "Arboviroses (Dengue": [
+      26
+    ],
+    "Zika": [
+      26
+    ],
+    "Chikungunya)": [
+      26
+    ],
+    "AVC Isquêmico Agudo": [
+      29
+    ],
+    "Fimose": [
+      30
+    ],
+    "Tumores periampulares": [
+      31
+    ],
+    "Hipertensão arterial crônica na gestação": [
+      32
+    ],
+    "Tuberculose Pulmonar (Diagnóstico e Tratamento)": [
+      33
+    ],
+    "Valores Preditivos Positivo e Negativo": [
+      34
+    ],
+    "Saúde Mental na Atenção Básica": [
+      35
+    ],
+    "Instabilidade Postural e Quedas": [
+      36
+    ],
+    "Febre Reumática": [
+      37
+    ],
+    "Pancreatite Crônica": [
+      38
+    ],
+    "Vigilância e manejo do pós-datismo": [
+      39
+    ],
+    "Malária (Plasmodium falciparum": [
+      40
+    ],
+    "vivax)": [
+      40
+    ],
+    "Complicações Agudas do Diabetes": [
+      41
+    ],
+    "Choque Séptico": [
+      42
+    ],
+    "Doença diverticular dos cólons": [
+      43
+    ],
+    "Fases do trabalho de parto": [
+      44
+    ],
+    "partograma e monitorização fetal": [
+      44
+    ],
+    "Saúde da População Prisional": [
+      45,
+      70
+    ],
+    "Espondilite Anquilosante": [
+      46
+    ],
+    "Calendário Vacinal (Pediátrico)": [
+      47
+    ],
+    "Derrame Pleural": [
+      48
+    ],
+    "Contracepção em condições clínicas especiais": [
+      49,
+      75
+    ],
+    "Tratamento Farmacológico": [
+      50
+    ],
+    "Colangite Esclerosante Primária (CEP)": [
+      51
+    ],
+    "Marcos do Desenvolvimento Neuropsicomotor": [
+      52
+    ],
+    "Hematomas intracranianos": [
+      53
+    ],
+    "Métodos contraceptivos: indicações e contraindicações": [
+      54
+    ],
+    "Imunização no Idoso": [
+      55
+    ],
+    "Vigilância Ambiental": [
+      56
+    ],
+    "Tireoidites e Emergências": [
+      58
+    ],
+    "Declaração de Óbito": [
+      62
+    ],
+    "Ensaios Comunitários": [
+      63
+    ],
+    "Risco de Suicídio": [
+      64
+    ],
+    "Trombofilias": [
+      65
+    ],
+    "Cetoacidose Diabética": [
+      66
+    ],
+    "Choque hemorrágico e ressuscitação volêmica": [
+      67
+    ],
+    "Alterações citológicas cervicais": [
+      68,
+      83
+    ],
+    "Transtorno de Ansiedade Generalizada": [
+      71
+    ],
+    "Supercrescimento Bacteriano do Intestino Delgado (SIBO)": [
+      72
+    ],
+    "Convulsão Febril": [
+      73
+    ],
+    "Tireoidectomia: técnicas e complicações": [
+      74
+    ],
+    "Saúde da População Indígena": [
+      77
+    ],
+    "Saúde da População LGBTQIAPN+": [
+      78
+    ],
+    "Choque Séptico e Disfunção Orgânica": [
+      79
+    ],
+    "Reanimação Avançada Neonatal": [
+      80
+    ],
+    "Fissura anal": [
+      81
+    ],
+    "Fatores de risco e prevenção da prematuridade": [
+      82
+    ],
+    "Saúde do Idoso": [
+      84
+    ],
+    "Intoxicação por Benzodiazepínicos": [
+      85
+    ],
+    "Cefaleias Secundárias": [
+      86
+    ],
+    "Síndrome Metabólica na Infância": [
+      87
+    ],
+    "Adenocarcinoma Pancreático": [
+      88
+    ],
+    "Descolamento prematuro de placenta": [
+      89
+    ],
+    "Raiva": [
+      90
+    ],
+    "Infarto sem Supradesnivelamento de ST (IAMSST)": [
+      91
+    ],
+    "Manejo da Exacerbação": [
+      92
+    ],
+    "Avaliação diagnóstica da hiperplasia": [
+      94
+    ],
+    "Anemia Ferropriva": [
+      95
+    ],
+    "Lesões ulcerativas genitais": [
+      96
+    ],
+    "Baixa Estatura": [
+      97
+    ],
+    "Colelitíase": [
+      98
+    ],
+    "Diagnóstico e condutas na rotura prematura de membranas": [
+      99
+    ],
+    "Periodicidade e exame físico obstétrico": [
+      100
+    ]
+  }
+}

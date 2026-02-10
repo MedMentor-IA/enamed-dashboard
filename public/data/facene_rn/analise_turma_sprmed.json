@@ -1,0 +1,158 @@
+{
+  "ciclos": {
+    "M4": {
+      "taxa": 38.8
+    },
+    "M2": {
+      "taxa": 28.7
+    },
+    "M6": {
+      "taxa": 36.0
+    }
+  },
+  "bloom": {
+    "Analisar": {
+      "taxa": 39.9
+    },
+    "Aplicar": {
+      "taxa": 37.5
+    },
+    "Lembrar": {
+      "taxa": 32.1
+    },
+    "Avaliar": {
+      "taxa": 36.2
+    },
+    "Entender": {
+      "taxa": 41.3
+    }
+  },
+  "competencias": {
+    "C-II": {
+      "taxa": 36.9
+    },
+    "C-III": {
+      "taxa": 44.1
+    },
+    "C-VIII": {
+      "taxa": 45.2
+    },
+    "C-IV": {
+      "taxa": 35.8
+    },
+    "C-V": {
+      "taxa": 37.8
+    },
+    "C-XII": {
+      "taxa": 45.2
+    },
+    "C-VI": {
+      "taxa": 18.3
+    },
+    "C-I": {
+      "taxa": 23.4
+    }
+  },
+  "dominios": {
+    "D-IX": {
+      "taxa": 38.3
+    },
+    "D-I": {
+      "taxa": 36.9
+    },
+    "D-X": {
+      "taxa": 36.7
+    },
+    "D-VI": {
+      "taxa": 30.6
+    },
+    "D-XI": {
+      "taxa": 40.0
+    },
+    "D-XIV": {
+      "taxa": 43.4
+    },
+    "D-II": {
+      "taxa": 44.4
+    },
+    "D-XIII": {
+      "taxa": 36.2
+    },
+    "D-XVIII": {
+      "taxa": 24.6
+    },
+    "D-XVII": {
+      "taxa": 29.5
+    },
+    "D-III": {
+      "taxa": 37.0
+    },
+    "D-IV": {
+      "taxa": 37.1
+    },
+    "D-XVI": {
+      "taxa": 45.2
+    },
+    "D-XX": {
+      "taxa": 49.2
+    },
+    "D-VII": {
+      "taxa": 32.1
+    },
+    "D-XV": {
+      "taxa": 51.6
+    },
+    "D-VIII": {
+      "taxa": 34.9
+    },
+    "D-V": {
+      "taxa": 23.4
+    }
+  },
+  "cenarios": {
+    "URG": {
+      "taxa": 37.0
+    },
+    "APS": {
+      "taxa": 38.9
+    },
+    "CRON": {
+      "taxa": 38.3
+    },
+    "MAT": {
+      "taxa": 45.9
+    },
+    "RAPS": {
+      "taxa": 42.1
+    },
+    "GS": {
+      "taxa": 42.1
+    }
+  },
+  "areas": {
+    "Pediatria": {
+      "taxa": 43.4
+    },
+    "Cirurgia": {
+      "taxa": 36.9
+    },
+    "Ginecologia e Obstetrícia": {
+      "taxa": 37.7
+    },
+    "Dermatologia": {
+      "taxa": 27.8
+    },
+    "Medicina Preventiva": {
+      "taxa": 36.7
+    },
+    "Psiquiatria": {
+      "taxa": 33.6
+    },
+    "Clínica Médica": {
+      "taxa": 37.1
+    },
+    "Ortopedia": {
+      "taxa": 43.7
+    }
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "competencias": {
+    "C-IX": {
+      "total": 571,
+      "acertos": 276,
+      "taxa": 48.34
+    },
+    "C-VII": {
+      "total": 571,
+      "acertos": 307,
+      "taxa": 53.77
+    },
+    "C-VI": {
+      "total": 1303,
+      "acertos": 715,
+      "taxa": 54.87
+    },
+    "C-III": {
+      "total": 4564,
+      "acertos": 2549,
+      "taxa": 55.85
+    },
+    "C-X": {
+      "total": 815,
+      "acertos": 461,
+      "taxa": 56.56
+    },
+    "C-II": {
+      "total": 9210,
+      "acertos": 5225,
+      "taxa": 56.73
+    },
+    "C-IV": {
+      "total": 8394,
+      "acertos": 4764,
+      "taxa": 56.75
+    },
+    "C-I": {
+      "total": 2445,
+      "acertos": 1392,
+      "taxa": 56.93
+    },
+    "C-VIII": {
+      "total": 4237,
+      "acertos": 2506,
+      "taxa": 59.15
+    },
+    "C-V": {
+      "total": 3913,
+      "acertos": 2317,
+      "taxa": 59.21
+    },
+    "C-XI": {
+      "total": 489,
+      "acertos": 329,
+      "taxa": 67.28
+    },
+    "C-XII": {
+      "total": 652,
+      "acertos": 456,
+      "taxa": 69.94
+    }
+  },
+  "dominios": {
+    "D-VI": {
+      "total": 733,
+      "acertos": 321,
+      "taxa": 43.79
+    },
+    "D-XV": {
+      "total": 163,
+      "acertos": 83,
+      "taxa": 50.92
+    },
+    "D-XIII": {
+      "total": 815,
+      "acertos": 420,
+      "taxa": 51.53
+    },
+    "D-II": {
+      "total": 815,
+      "acertos": 435,
+      "taxa": 53.37
+    },
+    "D-XIV": {
+      "total": 1223,
+      "acertos": 676,
+      "taxa": 55.27
+    },
+    "D-IX": {
+      "total": 10923,
+      "acertos": 6141,
+      "taxa": 56.22
+    },
+    "D-X": {
+      "total": 8393,
+      "acertos": 4809,
+      "taxa": 57.3
+    },
+    "D-V": {
+      "total": 326,
+      "acertos": 194,
+      "taxa": 59.51
+    },
+    "D-I": {
+      "total": 734,
+      "acertos": 460,
+      "taxa": 62.67
+    },
+    "D-XVI": {
+      "total": 408,
+      "acertos": 258,
+      "taxa": 63.24
+    },
+    "D-XI": {
+      "total": 3179,
+      "acertos": 2024,
+      "taxa": 63.67
+    },
+    "D-VII": {
+      "total": 326,
+      "acertos": 209,
+      "taxa": 64.11
+    },
+    "D-XVII": {
+      "total": 1466,
+      "acertos": 952,
+      "taxa": 64.94
+    },
+    "D-VIII": {
+      "total": 163,
+      "acertos": 106,
+      "taxa": 65.03
+    },
+    "D-XX": {
+      "total": 326,
+      "acertos": 215,
+      "taxa": 65.95
+    },
+    "D-III": {
+      "total": 489,
+      "acertos": 331,
+      "taxa": 67.69
+    },
+    "D-IV": {
+      "total": 489,
+      "acertos": 350,
+      "taxa": 71.57
+    },
+    "D-XVIII": {
+      "total": 81,
+      "acertos": 72,
+      "taxa": 88.89
+    }
+  },
+  "eixos_cognitivos": {
+    "E1": {
+      "total": 1059,
+      "acertos": 493,
+      "taxa": 46.55
+    },
+    "E3": {
+      "total": 1549,
+      "acertos": 844,
+      "taxa": 54.49
+    },
+    "E2": {
+      "total": 12062,
+      "acertos": 7001,
+      "taxa": 58.04
+    }
+  },
+  "niveis_cognitivos": {
+    "NC1": {
+      "total": 1059,
+      "acertos": 493,
+      "taxa": 46.55
+    },
+    "NC3": {
+      "total": 1956,
+      "acertos": 1013,
+      "taxa": 51.79
+    },
+    "NC2": {
+      "total": 11655,
+      "acertos": 6832,
+      "taxa": 58.62
+    }
+  },
+  "cenarios": {
+    "CRON": {
+      "total": 3015,
+      "acertos": 1518,
+      "taxa": 50.35
+    },
+    "RAPS": {
+      "total": 489,
+      "acertos": 274,
+      "taxa": 56.03
+    },
+    "URG": {
+      "total": 5136,
+      "acertos": 2934,
+      "taxa": 57.13
+    },
+    "APS": {
+      "total": 9208,
+      "acertos": 5272,
+      "taxa": 57.25
+    },
+    "MAT": {
+      "total": 1385,
+      "acertos": 839,
+      "taxa": 60.58
+    },
+    "GS": {
+      "total": 163,
+      "acertos": 123,
+      "taxa": 75.46
+    }
+  },
+  "ciclos": {
+    "M2": {
+      "total": 733,
+      "acertos": 329,
+      "taxa": 44.88
+    },
+    "M4": {
+      "total": 12796,
+      "acertos": 7286,
+      "taxa": 56.94
+    },
+    "M6": {
+      "total": 1141,
+      "acertos": 723,
+      "taxa": 63.37
+    }
+  },
+  "eixos_transversais": {},
+  "bloom": {
+    "Lembrar": {
+      "total": 570,
+      "acertos": 231,
+      "taxa": 40.53
+    },
+    "Entender": {
+      "total": 326,
+      "acertos": 152,
+      "taxa": 46.63
+    },
+    "Avaliar": {
+      "total": 1712,
+      "acertos": 910,
+      "taxa": 53.15
+    },
+    "Analisar": {
+      "total": 5299,
+      "acertos": 2904,
+      "taxa": 54.8
+    },
+    "Aplicar": {
+      "total": 6763,
+      "acertos": 4141,
+      "taxa": 61.23
+    }
+  },
+  "temas": {
+    "Doenças Cerebrovasculares": {
+      "total": 163,
+      "acertos": 32,
+      "taxa": 19.63
+    },
+    "Síndromes Disabsortivas": {
+      "total": 163,
+      "acertos": 36,
+      "taxa": 22.09
+    },
+    "Alcoolismo": {
+      "total": 163,
+      "acertos": 43,
+      "taxa": 26.38
+    },
+    "Atendimento ao Trabalho de Parto": {
+      "total": 163,
+      "acertos": 50,
+      "taxa": 30.67
+    },
+    "Desenvolvimento Infantil": {
+      "total": 81,
+      "acertos": 25,
+      "taxa": 30.86
+    },
+    "Choque": {
+      "total": 163,
+      "acertos": 54,
+      "taxa": 33.13
+    },
+    "Doenças Pancreáticas": {
+      "total": 245,
+      "acertos": 86,
+      "taxa": 35.1
+    },
+    "Micoses Superficiais": {
+      "total": 163,
+      "acertos": 59,
+      "taxa": 36.2
+    },
+    "Doenças Virais": {
+      "total": 163,
+      "acertos": 60,
+      "taxa": 36.81
+    },
+    "Pancreatobiliar": {
+      "total": 326,
+      "acertos": 129,
+      "taxa": 39.57
+    },
+    "Transtornos Ansiosos": {
+      "total": 163,
+      "acertos": 69,
+      "taxa": 42.33
+    },
+    "Antipsicóticos": {
+      "total": 82,
+      "acertos": 35,
+      "taxa": 42.68
+    },
+    "Dor pélvica": {
+      "total": 163,
+      "acertos": 70,
+      "taxa": 42.94
+    },
+    "Diabetes": {
+      "total": 163,
+      "acertos": 70,
+      "taxa": 42.94
+    },
+    "Distúrbios do Movimento": {
+      "total": 163,
+      "acertos": 71,
+      "taxa": 43.56
+    },
+    "Doenças da Pleura e Mediastino": {
+      "total": 163,
+      "acertos": 71,
+      "taxa": 43.56
+    },
+    "Hiperplasia endometrial": {
+      "total": 163,
+      "acertos": 71,
+      "taxa": 43.56
+    },
+    "Transtornos Alimentares": {
+      "total": 163,
+      "acertos": 72,
+      "taxa": 44.17
+    },
+    "Choque e Instabilidade Hemodinâmica": {
+      "total": 163,
+      "acertos": 76,
+      "taxa": 46.63
+    },
+    "Lombalgia mecânica e neurogênica": {
+      "total": 163,
+      "acertos": 79,
+      "taxa": 48.47
+    },
+    "Cuidados Pré-Natais": {
+      "total": 82,
+      "acertos": 40,
+      "taxa": 48.78
+    },
+    "Infecções do trato genital": {
+      "total": 244,
+      "acertos": 121,
+      "taxa": 49.59
+    },
+    "Outras Substâncias Psicoativas": {
+      "total": 163,
+      "acertos": 81,
+      "taxa": 49.69
+    },
+    "Contracepção": {
+      "total": 489,
+      "acertos": 243,
+      "taxa": 49.69
+    },
+    "Amenorreias": {
+      "total": 163,
+      "acertos": 82,
+      "taxa": 50.31
+    },
+    "Doenças da Tireoide": {
+      "total": 163,
+      "acertos": 82,
+      "taxa": 50.31
+    },
+    "Amniorrexe Prematura": {
+      "total": 163,
+      "acertos": 82,
+      "taxa": 50.31
+    },
+    "Endocrinopatias e Gestação": {
+      "total": 81,
+      "acertos": 41,
+      "taxa": 50.62
+    },
+    "Fundamentos da Epidemiologia": {
+      "total": 163,
+      "acertos": 83,
+      "taxa": 50.92
+    },
+    "Hipertensão Arterial Sistêmica (HAS)": {
+      "total": 163,
+      "acertos": 83,
+      "taxa": 50.92
+    },
+    "Vigilância em Saúde": {
+      "total": 163,
+      "acertos": 83,
+      "taxa": 50.92
+    },
+    "Parasitoses Sistêmicas": {
+      "total": 82,
+      "acertos": 43,
+      "taxa": 52.44
+    },
+    "Crescimento Infantil": {
+      "total": 326,
+      "acertos": 172,
+      "taxa": 52.76
+    },
+    "Lesões precursoras": {
+      "total": 326,
+      "acertos": 172,
+      "taxa": 52.76
+    },
+    "Prevenção e Promoção de Saúde": {
+      "total": 163,
+      "acertos": 87,
+      "taxa": 53.37
+    },
+    "Anemias": {
+      "total": 163,
+      "acertos": 87,
+      "taxa": 53.37
+    },
+    "Transtornos do Neurodesenvolvimento": {
+      "total": 244,
+      "acertos": 132,
+      "taxa": 54.1
+    },
+    "Distúrbios Ácido-Base": {
+      "total": 82,
+      "acertos": 46,
+      "taxa": 56.1
+    },
+    "Sepse": {
+      "total": 82,
+      "acertos": 46,
+      "taxa": 56.1
+    },
+    "Desenhos de Estudos Epidemiológicos": {
+      "total": 163,
+      "acertos": 92,
+      "taxa": 56.44
+    },
+    "Obesidade Infantil": {
+      "total": 163,
+      "acertos": 92,
+      "taxa": 56.44
+    },
+    "Coloproctologia": {
+      "total": 326,
+      "acertos": 185,
+      "taxa": 56.75
+    },
+    "Políticas de Saúde para Populações Específicas": {
+      "total": 978,
+      "acertos": 570,
+      "taxa": 58.28
+    },
+    "Infecções na Gestação": {
+      "total": 82,
+      "acertos": 48,
+      "taxa": 58.54
+    },
+    "Reanimação Neonatal": {
+      "total": 163,
+      "acertos": 96,
+      "taxa": 58.9
+    },
+    "Epilepsias": {
+      "total": 244,
+      "acertos": 144,
+      "taxa": 59.02
+    },
+    "Zoonoses": {
+      "total": 81,
+      "acertos": 48,
+      "taxa": 59.26
+    },
+    "Diabetes Mellitus": {
+      "total": 326,
+      "acertos": 194,
+      "taxa": 59.51
+    },
+    "Espondiloartrites": {
+      "total": 163,
+      "acertos": 99,
+      "taxa": 60.74
+    },
+    "Doenças Reumáticas": {
+      "total": 163,
+      "acertos": 100,
+      "taxa": 61.35
+    },
+    "Distúrbios Hipertensivos na Gestação": {
+      "total": 163,
+      "acertos": 101,
+      "taxa": 61.96
+    },
+    "Intoxicações Agudas": {
+      "total": 163,
+      "acertos": 101,
+      "taxa": 61.96
+    },
+    "Programas de Rastreamento": {
+      "total": 163,
+      "acertos": 103,
+      "taxa": 63.19
+    },
+    "Trauma e Emergência": {
+      "total": 489,
+      "acertos": 312,
+      "taxa": 63.8
+    },
+    "Urologia Pediátrica": {
+      "total": 163,
+      "acertos": 104,
+      "taxa": 63.8
+    },
+    "Síndromes Geriátricas": {
+      "total": 163,
+      "acertos": 104,
+      "taxa": 63.8
+    },
+    "Tireoide e Paratireoide": {
+      "total": 163,
+      "acertos": 105,
+      "taxa": 64.42
+    },
+    "Medicina Legal": {
+      "total": 163,
+      "acertos": 106,
+      "taxa": 65.03
+    },
+    "Doenças Autoimunes do Fígado": {
+      "total": 163,
+      "acertos": 108,
+      "taxa": 66.26
+    },
+    "Cefaleias e Algias Craniofaciais": {
+      "total": 163,
+      "acertos": 108,
+      "taxa": 66.26
+    },
+    "HIV/AIDS": {
+      "total": 245,
+      "acertos": 164,
+      "taxa": 66.94
+    },
+    "Doenças Glomerulares": {
+      "total": 163,
+      "acertos": 110,
+      "taxa": 67.48
+    },
+    "Asma": {
+      "total": 163,
+      "acertos": 111,
+      "taxa": 68.1
+    },
+    "Gestação Pós-Termo": {
+      "total": 163,
+      "acertos": 115,
+      "taxa": 70.55
+    },
+    "Tuberculose": {
+      "total": 163,
+      "acertos": 116,
+      "taxa": 71.17
+    },
+    "Imunizações": {
+      "total": 163,
+      "acertos": 116,
+      "taxa": 71.17
+    },
+    "Distúrbios da Coagulação": {
+      "total": 163,
+      "acertos": 117,
+      "taxa": 71.78
+    },
+    "Testes Diagnósticos": {
+      "total": 163,
+      "acertos": 123,
+      "taxa": 75.46
+    },
+    "Emergências Psiquiátricas": {
+      "total": 163,
+      "acertos": 124,
+      "taxa": 76.07
+    },
+    "Sangramento na Segunda Metade da Gestação": {
+      "total": 163,
+      "acertos": 131,
+      "taxa": 80.37
+    },
+    "Trauma Cranioencefálico (TCE)": {
+      "total": 163,
+      "acertos": 135,
+      "taxa": 82.82
+    },
+    "Parto Prematuro": {
+      "total": 163,
+      "acertos": 135,
+      "taxa": 82.82
+    },
+    "Hérnias da parede abdominal": {
+      "total": 82,
+      "acertos": 68,
+      "taxa": 82.93
+    },
+    "Artrites Inflamatórias": {
+      "total": 163,
+      "acertos": 136,
+      "taxa": 83.44
+    },
+    "Insuficiência Cardíaca (IC)": {
+      "total": 81,
+      "acertos": 69,
+      "taxa": 85.19
+    },
+    "Síndrome Coronariana Aguda (SCA)": {
+      "total": 163,
+      "acertos": 142,
+      "taxa": 87.12
+    },
+    "Saúde do Trabalhador": {
+      "total": 81,
+      "acertos": 72,
+      "taxa": 88.89
+    },
+    "Violência na Infância": {
+      "total": 163,
+      "acertos": 145,
+      "taxa": 88.96
+    },
+    "Abdome Agudo": {
+      "total": 163,
+      "acertos": 147,
+      "taxa": 90.18
+    },
+    "Superfície Ocular": {
+      "total": 81,
+      "acertos": 78,
+      "taxa": 96.3
+    }
+  },
+  "subtemas": {},
+  "areas": {
+    "Dermatologia": {
+      "total": 163,
+      "acertos": 59,
+      "taxa": 36.2
+    },
+    "Psiquiatria": {
+      "total": 408,
+      "acertos": 159,
+      "taxa": 38.97
+    },
+    "Ortopedia": {
+      "total": 163,
+      "acertos": 79,
+      "taxa": 48.47
+    },
+    "Ginecologia e Obstetrícia": {
+      "total": 2771,
+      "acertos": 1502,
+      "taxa": 54.2
+    },
+    "Clínica Médica": {
+      "total": 4727,
+      "acertos": 2686,
+      "taxa": 56.82
+    },
+    "Pediatria": {
+      "total": 2526,
+      "acertos": 1436,
+      "taxa": 56.85
+    },
+    "Medicina Preventiva": {
+      "total": 2037,
+      "acertos": 1232,
+      "taxa": 60.48
+    },
+    "Cirurgia": {
+      "total": 1875,
+      "acertos": 1185,
+      "taxa": 63.2
+    }
+  },
+  "subespecialidades": {}
+}
