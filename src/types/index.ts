@@ -82,80 +82,91 @@ export interface DashboardData {
   sprmed: SPRMedData;
 }
 
-// Legendas
+// Legendas - Portaria Inep 478/2025
 export const LEGENDAS = {
   ciclo: {
-    'M2': '2o ano - Conteudos basicos',
-    'M4': '4o ano - Conteudos intermediarios',
-    'M6': '6o ano - Internato'
+    'M2': 'ENAMED-2 - Ciclo Basico (Final do 2o ano)',
+    'M4': 'ENAMED-4 - Ciclo Clinico (Final do 4o ano)',
+    'M6': 'ENAMED-6 - Internato (Final do 6o ano)'
   },
   competencia: {
-    'C-I': 'Atencao as Necessidades de Saude',
-    'C-II': 'Tomada de Decisao Clinica',
-    'C-III': 'Comunicacao',
-    'C-IV': 'Cuidado Clinico Centrado na Pessoa',
-    'C-V': 'Promocao da Saude',
-    'C-VI': 'Prevencao de Agravos',
-    'C-VII': 'Raciocinio Epidemiologico',
-    'C-VIII': 'Gestao do Cuidado',
-    'C-IX': 'Trabalho em Equipe',
-    'C-X': 'Educacao em Saude',
-    'C-XI': 'Aprendizagem Autodirigida',
-    'C-XII': 'Etica e Profissionalismo'
+    'C-I': 'Singularidade',
+    'C-II': 'Hipoteses diagnosticas',
+    'C-III': 'Exames complementares',
+    'C-IV': 'Planos terapeuticos',
+    'C-V': 'Urgencias/emergencias',
+    'C-VI': 'Procedimentos basicos',
+    'C-VII': 'Necessidades coletivas',
+    'C-VIII': 'Promocao e vigilancia',
+    'C-IX': 'Principios do SUS',
+    'C-X': 'Comunicacao',
+    'C-XI': 'Equipe multiprofissional',
+    'C-XII': 'Etica e deontologia',
+    'C-XIII': 'Autorreflexao',
+    'C-XIV': 'TICs em saude',
+    'C-XV': 'Emergencias sanitarias'
   },
   dominio: {
-    'D-I': 'Processo Saude-Doenca',
-    'D-II': 'Semiologia e Propedeutica',
-    'D-III': 'Exames Complementares',
-    'D-IV': 'Diagnostico',
-    'D-V': 'Terapeutica',
-    'D-VI': 'Urgencia e Emergencia',
-    'D-VII': 'Saude da Crianca',
-    'D-VIII': 'Saude do Adolescente',
-    'D-IX': 'Saude do Adulto',
-    'D-X': 'Saude do Idoso',
-    'D-XI': 'Saude da Mulher',
-    'D-XII': 'Saude Mental',
-    'D-XIII': 'Saude Coletiva',
-    'D-XIV': 'Atencao Primaria',
-    'D-XV': 'Politicas de Saude'
+    'D-I': 'Bases moleculares e celulares',
+    'D-II': 'Processos fisiologicos do ciclo de vida',
+    'D-III': 'Determinantes sociais, culturais e ecologicos',
+    'D-IV': 'Etica, bioetica e seguranca de dados',
+    'D-V': 'Direitos humanos e inclusao',
+    'D-VI': 'Semiologia',
+    'D-VII': 'Comunicacao em saude',
+    'D-VIII': 'Registro e documentacao medica',
+    'D-IX': 'Propedeutica e diagnostico',
+    'D-X': 'Terapeutica',
+    'D-XI': 'Prognostico e prevencao',
+    'D-XII': 'Reabilitacao',
+    'D-XIII': 'Promocao e educacao em saude',
+    'D-XIV': 'Politicas de saude e SUS',
+    'D-XV': 'Gestao de servicos',
+    'D-XVI': 'Epidemiologia',
+    'D-XVII': 'Vigilancia em saude',
+    'D-XVIII': 'Saude ambiental e ocupacional',
+    'D-XIX': 'Lideranca e trabalho em equipe',
+    'D-XX': 'Metodologia cientifica e MBE',
+    'D-XXI': 'Tecnologias da informacao'
   },
   cenario: {
     'APS': 'Atencao Primaria a Saude',
     'URG': 'Urgencia e Emergencia',
+    'MAT': 'Rede Materno-Infantil',
+    'RAPS': 'Atencao Psicossocial',
     'CRON': 'Doencas Cronicas',
-    'MAT': 'Maternidade',
-    'RAPS': 'Rede de Atencao Psicossocial'
+    'REAB': 'Reabilitacao'
   },
   eixo_cognitivo: {
-    'E1': 'Memoria - Reconhecer, identificar',
-    'E2': 'Raciocinio Clinico - Analisar, diagnosticar',
-    'E3': 'Tomada de Decisao - Avaliar, decidir'
+    'E1': 'Conhecimento e Compreensao',
+    'E2': 'Aplicacao e Analise',
+    'E3': 'Avaliacao e Julgamento Etico-Profissional'
   },
   nivel_cognitivo: {
-    'NC1': 'Basico - Reconhecimento',
-    'NC2': 'Intermediario - Aplicacao',
-    'NC3': 'Avancado - Sintese critica'
+    'NC1': 'Conhecimento e Compreensao (Cognitivo)',
+    'NC2': 'Aplicacao e Execucao Pratica (Psicomotor)',
+    'NC3': 'Raciocinio Clinico e Julgamento Etico (Atitudinal)'
   },
   eixo_transversal: {
     'AT': 'Atencao a Saude',
-    'ES': 'Educacao em Saude',
-    'GS': 'Gestao em Saude'
+    'GS': 'Gestao em Saude',
+    'ES': 'Educacao em Saude'
   },
   area_formacao: {
     'CLIN': 'Clinica Medica',
-    'CIR': 'Cirurgia',
-    'PED': 'Pediatria',
+    'CIR': 'Cirurgia Geral',
     'GO': 'Ginecologia e Obstetricia',
+    'PED': 'Pediatria',
     'MFC': 'Medicina de Familia e Comunidade',
-    'SC': 'Saude Coletiva',
-    'SM': 'Saude Mental'
+    'SM': 'Saude Mental',
+    'SC': 'Saude Coletiva'
   },
   bloom: {
     'Lembrar': 'Recuperar informacao da memoria',
-    'Entender': 'Compreender significado',
-    'Aplicar': 'Usar conhecimento em pratica',
-    'Analisar': 'Decompor em partes',
-    'Avaliar': 'Fazer julgamentos'
+    'Entender': 'Compreender significado, interpretar',
+    'Aplicar': 'Usar conhecimento em situacao pratica',
+    'Analisar': 'Decompor em partes, identificar relacoes',
+    'Avaliar': 'Fazer julgamentos baseados em criterios',
+    'Criar': 'Produzir algo novo, sintetizar'
   }
 } as const;

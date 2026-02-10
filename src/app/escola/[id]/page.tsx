@@ -124,73 +124,72 @@ const ESCOLAS: Record<string, {
 // Legendas
 const LEGENDAS: Record<string, Record<string, string>> = {
   ciclo: {
-    'M2': 'Lembrar/Entender (Bloom 1-2)',
-    'M4': 'Aplicar/Analisar (Bloom 3-4)',
-    'M6': 'Avaliar/Criar (Bloom 5-6)'
+    'M2': 'ENAMED-2 - Ciclo Básico (Final do 2º ano)',
+    'M4': 'ENAMED-4 - Ciclo Clínico (Final do 4º ano)',
+    'M6': 'ENAMED-6 - Internato (Final do 6º ano)'
   },
   eixo_cognitivo: {
-    'E1': 'Lembrar e Entender',
-    'E2': 'Aplicar e Analisar',
-    'E3': 'Avaliar e Criar'
+    'E1': 'Conhecimento e Compreensão',
+    'E2': 'Aplicação e Análise',
+    'E3': 'Avaliação e Julgamento Ético-Profissional'
   },
   nivel_cognitivo: {
-    'NC1': 'Básico (Lembrar/Entender)',
-    'NC2': 'Intermediário (Aplicar/Analisar)',
-    'NC3': 'Avançado (Avaliar/Criar)'
+    'NC1': 'Conhecimento e Compreensão (Cognitivo)',
+    'NC2': 'Aplicação e Execução Prática (Psicomotor)',
+    'NC3': 'Raciocínio Clínico e Julgamento Ético (Atitudinal)'
   },
   eixo_transversal: {
-    'AT': 'Atenção à Saúde - Cuidado centrado na pessoa',
-    'GS': 'Gestão em Saúde - Coordenação, priorização, rede',
-    'ES': 'Educação em Saúde - Educação paciente, desenvolvimento'
+    'AT': 'Atenção à Saúde - Cuidado integral centrado na pessoa',
+    'GS': 'Gestão em Saúde - Planejamento, equipe multiprofissional, políticas',
+    'ES': 'Educação em Saúde - Aprendizagem contínua, educação permanente'
   },
   competencia: {
-    'C-I': 'Singularidade - Respeitar singularidade de cada pessoa',
-    'C-II': 'Hipóteses diagnósticas - Formular hipóteses e plano',
-    'C-III': 'Exames complementares - Solicitar e interpretar',
-    'C-IV': 'Planos terapêuticos - Elaborar, pactuar, acompanhar',
-    'C-V': 'Urgências/emergências - Reconhecer e tratar',
-    'C-VI': 'Procedimentos básicos - Indicar e realizar',
-    'C-VII': 'Necessidades coletivas - Identificar necessidades',
-    'C-VIII': 'Promoção e vigilância - Planejar e implementar',
-    'C-IX': 'Princípios do SUS - Aplicar princípios e políticas',
-    'C-X': 'Comunicação - Comunicar com pacientes e equipes',
-    'C-XI': 'Equipe multiprofissional - Trabalhar em equipe',
-    'C-XII': 'Ética e deontologia - Respeitar normas éticas',
-    'C-XIII': 'Autorreflexão - Aprendizado permanente',
-    'C-XIV': 'TICs em saúde - Tecnologias da informação',
-    'C-XV': 'Emergências sanitárias - Atuar em desastres'
+    'C-I': 'Singularidade - Respeitar a singularidade de cada pessoa e grupo social',
+    'C-II': 'Hipóteses diagnósticas - Formular hipóteses diagnósticas e plano propedêutico',
+    'C-III': 'Exames complementares - Solicitar e interpretar exames complementares',
+    'C-IV': 'Planos terapêuticos - Elaborar, pactuar e acompanhar planos terapêuticos',
+    'C-V': 'Urgências/emergências - Reconhecer e tratar urgências e emergências',
+    'C-VI': 'Procedimentos básicos - Indicar e realizar procedimentos clínicos e cirúrgicos básicos',
+    'C-VII': 'Necessidades coletivas - Identificar necessidades coletivas de saúde',
+    'C-VIII': 'Promoção e vigilância - Planejar e implementar ações de promoção e vigilância',
+    'C-IX': 'Princípios do SUS - Aplicar princípios e políticas do SUS',
+    'C-X': 'Comunicação - Comunicar-se com pacientes, famílias e equipes',
+    'C-XI': 'Equipe multiprofissional - Trabalhar em equipe multiprofissional',
+    'C-XII': 'Ética e deontologia - Respeitar normas éticas e deontológicas',
+    'C-XIII': 'Autorreflexão - Desenvolver atitude autorreflexiva e aprendizado permanente',
+    'C-XIV': 'TICs em saúde - Utilizar tecnologias da informação e comunicação em saúde',
+    'C-XV': 'Emergências sanitárias - Atuar em emergências sanitárias e desastres'
   },
   dominio: {
-    'D-I': 'Bases moleculares e celulares',
-    'D-II': 'Processos fisiológicos do ciclo de vida',
-    'D-III': 'Determinantes sociais, culturais e ecológicos',
-    'D-IV': 'Ética, bioética e segurança de dados',
-    'D-V': 'Direitos humanos e inclusão',
-    'D-VI': 'Semiologia',
-    'D-VII': 'Comunicação em saúde',
-    'D-VIII': 'Registro e documentação médica',
-    'D-IX': 'Propedêutica e diagnóstico',
-    'D-X': 'Terapêutica',
-    'D-XI': 'Prognóstico e prevenção',
-    'D-XII': 'Reabilitação',
-    'D-XIII': 'Promoção e educação em saúde',
-    'D-XIV': 'Políticas de saúde e SUS',
-    'D-XV': 'Gestão de serviços',
-    'D-XVI': 'Epidemiologia',
-    'D-XVII': 'Vigilância em saúde',
-    'D-XVIII': 'Saúde ambiental e ocupacional',
-    'D-XIX': 'Liderança e trabalho em equipe',
-    'D-XX': 'Metodologia científica e MBE',
-    'D-XXI': 'Tecnologias da informação'
+    'D-I': 'Bases moleculares e celulares (Bloco I)',
+    'D-II': 'Processos fisiológicos do ciclo de vida (Bloco I)',
+    'D-III': 'Determinantes sociais, culturais e ecológicos (Bloco I)',
+    'D-IV': 'Ética, bioética e segurança de dados (Bloco II)',
+    'D-V': 'Direitos humanos e inclusão (Bloco II)',
+    'D-VI': 'Semiologia (Bloco II)',
+    'D-VII': 'Comunicação em saúde (Bloco II)',
+    'D-VIII': 'Registro e documentação médica (Bloco II)',
+    'D-IX': 'Propedêutica e diagnóstico (Bloco III)',
+    'D-X': 'Terapêutica (Bloco III)',
+    'D-XI': 'Prognóstico e prevenção (Bloco III)',
+    'D-XII': 'Reabilitação (Bloco III)',
+    'D-XIII': 'Promoção e educação em saúde (Bloco III)',
+    'D-XIV': 'Políticas de saúde e SUS (Bloco IV)',
+    'D-XV': 'Gestão de serviços (Bloco IV)',
+    'D-XVI': 'Epidemiologia (Bloco IV)',
+    'D-XVII': 'Vigilância em saúde (Bloco IV)',
+    'D-XVIII': 'Saúde ambiental e ocupacional (Bloco IV)',
+    'D-XIX': 'Liderança e trabalho em equipe (Bloco IV)',
+    'D-XX': 'Metodologia científica e MBE (Bloco IV)',
+    'D-XXI': 'Tecnologias da informação (Bloco IV)'
   },
   cenario: {
-    'APS': 'Atenção Primária (UBS, ESF, NASF-AB)',
+    'APS': 'Atenção Primária à Saúde (UBS, ESF, NASF-AB)',
     'URG': 'Urgência e Emergência (UPA, SAMU, PS)',
-    'MAT': 'Rede Materno-Infantil (Maternidades)',
+    'MAT': 'Rede Materno-Infantil (Maternidades, Casas de parto)',
     'RAPS': 'Atenção Psicossocial (CAPS I/II/AD)',
-    'CRON': 'Doenças Crônicas (Ambulatórios, AD)',
-    'REAB': 'Reabilitação (Centros de referência)',
-    'GS': 'Gestão em Saúde'
+    'CRON': 'Doenças Crônicas (Ambulatórios, Atenção domiciliar)',
+    'REAB': 'Reabilitação (Centros de referência)'
   },
   bloom: {
     'Lembrar': '1 - Recuperar informação da memória',
@@ -201,13 +200,13 @@ const LEGENDAS: Record<string, Record<string, string>> = {
     'Criar': '6 - Produzir algo novo, sintetizar'
   },
   area_formacao: {
-    'CLIN': 'Clínica Médica - Raciocínio clínico em adultos',
-    'CIR': 'Cirurgia Geral - Manejo cirúrgico, trauma',
-    'GO': 'Ginecologia e Obstetrícia - Saúde da mulher',
-    'PED': 'Pediatria - Crianças e adolescentes',
-    'MFC': 'Medicina de Família - Atenção primária',
-    'SM': 'Saúde Mental - Transtornos mentais, manejo',
-    'SC': 'Saúde Coletiva - Epidemiologia, vigilância, SUS'
+    'CLIN': 'Clínica Médica - Diagnóstico e terapêutico de condições prevalentes em adultos',
+    'CIR': 'Cirurgia Geral - Manejo cirúrgico básico, trauma e urgências',
+    'GO': 'Ginecologia e Obstetrícia - Cuidado integral à saúde da mulher',
+    'PED': 'Pediatria - Cuidado integral de crianças e adolescentes',
+    'MFC': 'Medicina de Família e Comunidade - Atenção primária, cuidado longitudinal',
+    'SM': 'Saúde Mental - Reconhecimento, manejo e atenção psicossocial',
+    'SC': 'Saúde Coletiva - Epidemiologia, vigilância, gestão do SUS, bioética'
   }
 };
 
