@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'next/navigation';
-import Link from 'next/link';
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   ScatterChart, Scatter, ZAxis, Cell, RadarChart, Radar, PolarGrid, PolarAngleAxis, PolarRadiusAxis
@@ -285,17 +284,7 @@ export default function EscolaPage() {
   const [modalTitle, setModalTitle] = useState('');
   const [modalQuestoes, setModalQuestoes] = useState<Questao[]>([]);
   const [questaoSelecionada, setQuestaoSelecionada] = useState<Questao | null>(null);
-  const [isSubdomain, setIsSubdomain] = useState(false);
   const [exportando, setExportando] = useState(false);
-
-  // Detecta se está acessando via subdomínio (esconde navegação)
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const hostname = window.location.hostname;
-      const isOnSubdomain = hostname.endsWith('.enamed.sprmed.com.br') && hostname !== 'enamed.sprmed.com.br';
-      setIsSubdomain(isOnSubdomain);
-    }
-  }, []);
 
   useEffect(() => {
     if (!escola) return;
@@ -513,7 +502,7 @@ export default function EscolaPage() {
 
   if (!escola) {
     return <div className="min-h-screen bg-[#0a1628] text-white flex items-center justify-center">
-      <div><h1 className="text-2xl mb-4">Escola não encontrada</h1><Link href="/" className="text-blue-400">Voltar</Link></div>
+      <div><h1 className="text-2xl mb-4">Escola não encontrada</h1></div>
     </div>;
   }
 
@@ -652,7 +641,6 @@ export default function EscolaPage() {
       {/* Header */}
       <div className="header">
         <h1>
-          {!isSubdomain && <Link href="/" style={{ color: '#888', marginRight: 15 }}>&larr;</Link>}
           Dashboard ENAMED 2025 - {escola.nome}
         </h1>
         <p>{escola.alunos} alunos | {escola.cidade}/{escola.uf} | Clique nos cards para ver as questões</p>
