@@ -195,18 +195,19 @@ function buildDimensionSection(
       { text: 'Descricao', style: 'tableHeader' },
       { text: 'Taxa', style: 'tableHeader' },
       { text: 'Qtd', style: 'tableHeader' },
-      { text: 'Questoes Erradas (< 50%)', style: 'tableHeader' },
+      { text: 'Acertadas (>= 50%)', style: 'tableHeader' },
+      { text: 'Erradas (< 50%)', style: 'tableHeader' },
     ],
     ...items.map((item) => {
-      const erradas = questoesFiltradas
-        .filter(q => item.numeros.includes(q.numero) && q.taxa_acerto < 50)
-        .map(q => q.numero)
-        .sort((a, b) => a - b);
+      const qsDoItem = questoesFiltradas.filter(q => item.numeros.includes(q.numero));
+      const acertadas = qsDoItem.filter(q => q.taxa_acerto >= 50).map(q => q.numero).sort((a, b) => a - b);
+      const erradas = qsDoItem.filter(q => q.taxa_acerto < 50).map(q => q.numero).sort((a, b) => a - b);
       return [
         { text: item.nome, bold: true, alignment: 'center' as const },
         { text: legendas[item.nome] || item.nome, fontSize: 9 },
         { text: `${item.taxa.toFixed(1)}%`, bold: true, color: corTaxa(item.taxa), fillColor: corTaxaBg(item.taxa), alignment: 'center' as const },
         { text: String(item.qtd), alignment: 'center' as const },
+        { text: acertadas.length > 0 ? acertadas.map(n => `Q${n}`).join(', ') : '-', fontSize: 7, color: acertadas.length > 0 ? VERDE_HEX : CINZA },
         { text: erradas.length > 0 ? erradas.map(n => `Q${n}`).join(', ') : '-', fontSize: 7, color: erradas.length > 0 ? VERMELHO_HEX : CINZA },
       ];
     }),
@@ -218,7 +219,7 @@ function buildDimensionSection(
   return [
     { text: titulo, style: 'sectionTitle' },
     {
-      table: { headerRows: 1, widths: [50, '*', 55, 30, '*'], body: tableBody },
+      table: { headerRows: 1, widths: [45, 'auto', 40, 25, '*', '*'], body: tableBody },
       layout: {
         fillColor: (rowIndex: number, _node: unknown, columnIndex: number) => {
           if (rowIndex === 0) return AZUL;

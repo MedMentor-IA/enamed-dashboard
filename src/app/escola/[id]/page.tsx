@@ -631,17 +631,26 @@ export default function EscolaPage() {
                       <span style={{ color: '#ef4444' }}>{formatarNumero(item.totalErros)} erros</span>
                     </div>
                     {(() => {
-                      const qsErradas = questoesFiltradas
-                        .filter(q => item.numeros.includes(q.numero) && q.taxa_acerto < 50)
-                        .map(q => q.numero)
-                        .sort((a, b) => a - b);
-                      if (qsErradas.length === 0) return null;
+                      const qsDoItem = questoesFiltradas.filter(q => item.numeros.includes(q.numero));
+                      const qsAcertadas = qsDoItem.filter(q => q.taxa_acerto >= 50).map(q => q.numero).sort((a, b) => a - b);
+                      const qsErradas = qsDoItem.filter(q => q.taxa_acerto < 50).map(q => q.numero).sort((a, b) => a - b);
                       return (
-                        <div className="dim-item-questoes-erradas">
-                          <span style={{ color: '#ef4444', fontSize: 10 }}>
-                            Questões erradas: {qsErradas.map(n => `Q${n}`).join(', ')}
-                          </span>
-                        </div>
+                        <>
+                          {qsAcertadas.length > 0 && (
+                            <div className="dim-item-questoes-acertadas">
+                              <span style={{ color: '#22c55e', fontSize: 10 }}>
+                                Acertadas: {qsAcertadas.map(n => `Q${n}`).join(', ')}
+                              </span>
+                            </div>
+                          )}
+                          {qsErradas.length > 0 && (
+                            <div className="dim-item-questoes-erradas">
+                              <span style={{ color: '#ef4444', fontSize: 10 }}>
+                                Erradas: {qsErradas.map(n => `Q${n}`).join(', ')}
+                              </span>
+                            </div>
+                          )}
+                        </>
                       );
                     })()}
                   </>
