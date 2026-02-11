@@ -873,7 +873,7 @@ export default function EscolaPage() {
               </select>
             </div>
             
-            {/* Botão Exportar DOCX */}
+            {/* Botão Exportar PDF */}
             <div style={{ marginLeft: 'auto' }}>
               <button
                 className="btn-exportar"
@@ -881,8 +881,8 @@ export default function EscolaPage() {
                 onClick={async () => {
                   setExportando(true);
                   try {
-                    const { generateReport } = await import('@/lib/report/generateReport');
-                    await generateReport({
+                    const { generateReportPdf } = await import('@/lib/report/generateReportPdf');
+                    await generateReportPdf({
                       escolaId,
                       questoes,
                       indices,
@@ -898,7 +898,7 @@ export default function EscolaPage() {
                   }
                 }}
               >
-                {exportando ? '⏳ Gerando...' : '📄 Exportar Relatório'}
+                {exportando ? '⏳ Gerando...' : '📄 Exportar Relatório PDF'}
               </button>
             </div>
           </div>
