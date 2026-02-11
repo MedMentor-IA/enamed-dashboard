@@ -12,6 +12,7 @@ const SUBDOMAIN_MAP: Record<string, string> = {
   'facene-rn': 'facene_rn',
   'enamed-5': 'enamed_5',
   'unifoa': 'unifoa',
+  'emescam': 'emescam',
 };
 
 // Domínios base (sem subdomínio = admin)

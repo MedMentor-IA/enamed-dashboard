@@ -137,6 +137,16 @@ const ESCOLAS: Record<string, {
     proficiencia: -0.3,
     risco: 47,
     percentualRisco: 39
+  },
+  emescam: {
+    nome: 'EMESCAM',
+    cidade: 'Vitória',
+    uf: 'ES',
+    alunos: 135,
+    nota: 69.97,
+    proficiencia: 0.17,
+    risco: 60,
+    percentualRisco: 44
   }
 };
 

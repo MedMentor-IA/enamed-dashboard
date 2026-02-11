@@ -119,6 +119,15 @@ const ESCOLAS = [
     alunos: 119,
     nota: 61.71,
     proficiencia: -0.3
+  },
+  {
+    id: 'emescam',
+    nome: 'EMESCAM',
+    cidade: 'Vitória',
+    uf: 'ES',
+    alunos: 135,
+    nota: 69.97,
+    proficiencia: 0.17
   }
 ];
 
