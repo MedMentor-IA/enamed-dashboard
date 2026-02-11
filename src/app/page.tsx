@@ -25,6 +25,16 @@ const ESCOLAS_BRASIL = [
     nota: 65.03,
     proficiencia: -0.11,
     destaque: true
+  },
+  {
+    id: 'enamed_5',
+    nome: 'ENAMED 5 (49 faculdades)',
+    cidade: 'Nacional',
+    uf: 'BR',
+    alunos: 4129,
+    nota: 73.42,
+    proficiencia: 0.36,
+    destaque: true
   }
 ];
 
