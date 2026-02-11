@@ -927,7 +927,7 @@ export default function EscolaPage() {
           
           {renderSection(
             'Competências ENAMED (Portaria INEP 478/2025)',
-            '<strong>C-I</strong>=Atenção | <strong>C-II</strong>=Decisão | <strong>C-III</strong>=Comunicação | <strong>C-IV</strong>=Cuidado',
+            '<strong>C-I</strong>=Singularidade | <strong>C-II</strong>=Hipóteses | <strong>C-III</strong>=Exames | <strong>C-IV</strong>=Planos terapêuticos | <strong>C-V</strong>=Urgências | <strong>C-VI</strong>=Procedimentos<br/><strong>C-VII</strong>=Necessidades coletivas | <strong>C-VIII</strong>=Promoção | <strong>C-IX</strong>=SUS | <strong>C-X</strong>=Comunicação | <strong>C-XI</strong>=Equipe | <strong>C-XII</strong>=Ética<br/><strong>C-XIII</strong>=Autorreflexão | <strong>C-XIV</strong>=TICs | <strong>C-XV</strong>=Emergências sanitárias',
             indices.por_competencia || {},
             sprmed.competencias || {},
             'competencia'
@@ -935,7 +935,7 @@ export default function EscolaPage() {
           
           {renderSection(
             'Domínios de Conteúdo (D-I a D-XXI)',
-            '<strong>D-VI</strong>=Urgência | <strong>D-IX</strong>=Adulto | <strong>D-XI</strong>=Mulher | <strong>D-XII</strong>=Mental',
+            '<strong>Bloco I</strong>: D-I=Bases moleculares | D-II=Fisiologia | D-III=Determinantes sociais<br/><strong>Bloco II</strong>: D-IV=Ética | D-V=Direitos humanos | D-VI=Semiologia | D-VII=Comunicação | D-VIII=Registro<br/><strong>Bloco III</strong>: D-IX=Propedêutica | D-X=Terapêutica | D-XI=Prognóstico | D-XII=Reabilitação | D-XIII=Promoção<br/><strong>Bloco IV</strong>: D-XIV=Políticas SUS | D-XV=Gestão | D-XVI=Epidemiologia | D-XVII=Vigilância | D-XVIII=Saúde ambiental | D-XIX=Liderança | D-XX=MBE | D-XXI=TICs',
             indices.por_dominio || {},
             sprmed.dominios || {},
             'dominio'
@@ -943,7 +943,7 @@ export default function EscolaPage() {
           
           {renderSection(
             'Cenários de Atuação',
-            '<strong>APS</strong>=Primária | <strong>URG</strong>=Urgência | <strong>CRON</strong>=Crônicas | <strong>MAT</strong>=Maternidade | <strong>RAPS</strong>=Mental',
+            '<strong>APS</strong>=Atenção Primária à Saúde | <strong>URG</strong>=Urgência e Emergência | <strong>MAT</strong>=Rede Materno-Infantil | <strong>RAPS</strong>=Atenção Psicossocial | <strong>CRON</strong>=Doenças Crônicas | <strong>REAB</strong>=Reabilitação',
             indices.por_cenario || {},
             sprmed.cenarios || {},
             'cenario'
