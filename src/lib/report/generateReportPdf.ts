@@ -322,11 +322,11 @@ async function loadLogoBase64(): Promise<string> {
     const img = new Image();
     img.onload = () => {
       const canvas = document.createElement('canvas');
-      canvas.width = 50;
-      canvas.height = Math.round(50 * (img.height / img.width));
+      canvas.width = img.width;
+      canvas.height = img.height;
       const ctx = canvas.getContext('2d')!;
-      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-      resolve(canvas.toDataURL('image/jpeg', 0.4));
+      ctx.drawImage(img, 0, 0);
+      resolve(canvas.toDataURL('image/png'));
     };
     const reader = new FileReader();
     reader.onloadend = () => { img.src = reader.result as string; };
@@ -339,17 +339,17 @@ async function createRotatedLogo(logoBase64: string): Promise<string> {
     const img = new Image();
     img.onload = () => {
       // Canvas reduzido para manter PDF leve
-      const size = 200;
+      const size = 750;
       const canvas = document.createElement('canvas');
       canvas.width = size;
       canvas.height = size;
       const ctx = canvas.getContext('2d')!;
       ctx.translate(size / 2, size / 2);
       ctx.rotate(-40 * Math.PI / 180);
-      const w = 150;
+      const w = 500;
       const h = w * (img.height / img.width);
       ctx.drawImage(img, -w / 2, -h / 2, w, h);
-      resolve(canvas.toDataURL('image/jpeg', 0.4));
+      resolve(canvas.toDataURL('image/png'));
     };
     img.src = logoBase64;
   });
