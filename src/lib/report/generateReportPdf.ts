@@ -548,10 +548,9 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       widths: ['*'],
       body: [[{
         stack: [
-          { text: 'Dr. Vinicius Cogo Destefani', fontSize: 18, bold: true, color: AZUL, alignment: 'center', margin: [0, 15, 0, 4] },
-          { text: 'Medico | Mestre em Ensino em Ciencias da Saude', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
-          { text: 'Diretor Medico e Socio-Diretor Pedagogico', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
-          { text: 'SPR Med - Assessoria Pedagogica para Escolas Medicas', fontSize: 11, bold: true, color: VERDE, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Dr. Vinicius C. Destefani', fontSize: 18, bold: true, color: AZUL, alignment: 'center', margin: [0, 15, 0, 4] },
+          { text: 'Medico e Socio-Diretor Pedagogico do SPRMed', fontSize: 12, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Mestre em Ensino em Ciencias da Saude', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
           { text: 'Especialista em analise de desempenho ENAMED e psicometria educacional', fontSize: 10, italics: true, color: CINZA, alignment: 'center', margin: [0, 0, 0, 15] },
         ],
         fillColor: '#F8F9FA',
@@ -641,7 +640,7 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       columns: [
         { text: 'CONFIDENCIAL', bold: true, color: '#C0392B', fontSize: 7, width: 'auto' },
         { text: `  |  ${escola.nome}  |  SPRMed ENAMED 2025  |  Pagina ${currentPage} de ${pageCount}`, fontSize: 7, color: CINZA, width: '*' },
-        { text: 'Dr. Vinicius Destefani | WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
+        { text: 'Dr. Vinicius C. Destefani | WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
       ],
       margin: [40, 10, 40, 0],
     }),

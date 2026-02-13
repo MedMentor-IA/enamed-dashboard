@@ -1640,7 +1640,7 @@ export default function EscolaPage() {
         </svg>
         <div style={{ lineHeight: 1.3 }}>
           <div style={{ fontSize: 13, fontWeight: 700 }}>Fale com o Dr. Vinícius</div>
-          <div style={{ fontSize: 11, opacity: 0.9 }}>Diretor Médico - SPRMed</div>
+          <div style={{ fontSize: 11, opacity: 0.9 }}>Médico e Sócio-Diretor Pedagógico - SPRMed</div>
         </div>
       </a>
     </>
