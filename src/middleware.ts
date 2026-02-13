@@ -13,6 +13,7 @@ const SUBDOMAIN_MAP: Record<string, string> = {
   'enamed-5': 'enamed_5',
   'unifoa': 'unifoa',
   'emescam': 'emescam',
+  'afya': 'afya_consolidado',
 };
 
 // Domínios base (sem subdomínio = admin)

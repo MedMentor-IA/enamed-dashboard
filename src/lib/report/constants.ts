@@ -140,6 +140,16 @@ export const ESCOLAS: Record<string, EscolaConfig> = {
     risco: 60,
     percentualRisco: 44,
   },
+  afya_consolidado: {
+    nome: 'Afya (Consolidado)',
+    cidade: '20 unidades',
+    uf: 'BR',
+    alunos: 2870,
+    nota: 61.92,
+    proficiencia: -0.29,
+    risco: 5,
+    percentualRisco: 0,
+  },
 };
 
 export const LEGENDAS: Record<string, Record<string, string>> = {

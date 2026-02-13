@@ -128,6 +128,15 @@ const ESCOLAS = [
     alunos: 135,
     nota: 69.97,
     proficiencia: 0.17
+  },
+  {
+    id: 'afya_consolidado',
+    nome: 'Afya (Consolidado)',
+    cidade: '20 unidades',
+    uf: 'BR',
+    alunos: 2870,
+    nota: 61.92,
+    proficiencia: -0.29
   }
 ];
 
