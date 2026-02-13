@@ -530,21 +530,41 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
   content.push(...buildQuestionDetail(questoesFiltradas));
 
   // 5. Página de contato com QR code
-  const whatsappUrl = 'https://wa.me/5511941073157?text=Ol%C3%A1%20Dr.%20Vin%C3%ADcius%2C%20gostaria%20de%20tirar%20d%C3%BAvidas%20sobre%20o%20relat%C3%B3rio%20ENAMED.';
+  const whatsappMsg = encodeURIComponent(`Olá Dr. Vinícius, estou analisando o relatório ENAMED 2025 da ${escola.nome} e gostaria de tirar dúvidas.`);
+  const whatsappUrl = `https://wa.me/5511941073157?text=${whatsappMsg}`;
   let qrDataUrl = '';
   try {
     qrDataUrl = await QRCode.toDataURL(whatsappUrl, { width: 200, margin: 1, color: { dark: '#1A5276', light: '#FFFFFF' } });
   } catch { /* fallback: no QR */ }
 
   content.push({ text: '', pageBreak: 'before' });
-  content.push({ text: '', margin: [0, 60, 0, 0] });
+  content.push({ text: '', margin: [0, 40, 0, 0] });
   content.push({ text: 'Duvidas sobre este relatorio?', style: 'coverTitle', alignment: 'center' });
-  content.push({ text: 'Fale com o Dr. Vinicius Cogo Destefani', style: 'coverSubtitle', alignment: 'center', margin: [0, 10, 0, 20] });
-  content.push({ text: 'Socio-Diretor Pedagogico SPR Med', alignment: 'center', fontSize: 12, color: CINZA, margin: [0, 0, 0, 30] });
+  content.push({ text: '', margin: [0, 15, 0, 0] });
+
+  // Credenciais do Dr. Vinícius
+  content.push({
+    table: {
+      widths: ['*'],
+      body: [[{
+        stack: [
+          { text: 'Dr. Vinicius Cogo Destefani', fontSize: 18, bold: true, color: AZUL, alignment: 'center', margin: [0, 15, 0, 4] },
+          { text: 'Medico | Mestre em Ensino em Ciencias da Saude', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Diretor Medico e Socio-Diretor Pedagogico', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'SPR Med - Assessoria Pedagogica para Escolas Medicas', fontSize: 11, bold: true, color: VERDE, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Especialista em analise de desempenho ENAMED e psicometria educacional', fontSize: 10, italics: true, color: CINZA, alignment: 'center', margin: [0, 0, 0, 15] },
+        ],
+        fillColor: '#F8F9FA',
+      }]],
+    },
+    layout: { hLineWidth: () => 0.5, vLineWidth: () => 0.5, hLineColor: () => '#DEE2E6', vLineColor: () => '#DEE2E6' },
+    margin: [40, 0, 40, 25],
+  });
 
   if (qrDataUrl) {
-    content.push({ image: qrDataUrl, width: 150, alignment: 'center', margin: [0, 0, 0, 20] });
-    content.push({ text: 'Escaneie o QR Code para abrir o WhatsApp', alignment: 'center', fontSize: 10, color: CINZA, italics: true, margin: [0, 0, 0, 20] });
+    content.push({ text: 'Fale comigo pelo WhatsApp:', alignment: 'center', fontSize: 12, bold: true, color: AZUL, margin: [0, 0, 0, 10] });
+    content.push({ image: qrDataUrl, width: 140, alignment: 'center', margin: [0, 0, 0, 10] });
+    content.push({ text: 'Escaneie o QR Code acima ou utilize os contatos abaixo', alignment: 'center', fontSize: 9, color: CINZA, italics: true, margin: [0, 0, 0, 20] });
   }
 
   content.push({
@@ -552,19 +572,20 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       widths: ['*'],
       body: [[{
         stack: [
-          { text: 'WhatsApp: +55 11 94107-3157', fontSize: 13, bold: true, color: '#148F77', alignment: 'center', margin: [0, 8, 0, 4] },
+          { text: 'WhatsApp: +55 11 94107-3157', fontSize: 13, bold: true, color: '#148F77', alignment: 'center', margin: [0, 10, 0, 4] },
           { text: 'E-mail: vinicius@sprmed.com.br', fontSize: 12, color: AZUL, alignment: 'center', margin: [0, 0, 0, 4] },
-          { text: 'enamed.sprmed.com.br', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 8] },
+          { text: 'enamed.sprmed.com.br', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 10] },
         ],
         fillColor: '#F8F9FA',
       }]],
     },
     layout: { hLineWidth: () => 0.5, vLineWidth: () => 0.5, hLineColor: () => '#DEE2E6', vLineColor: () => '#DEE2E6' },
-    margin: [60, 0, 60, 30],
+    margin: [60, 0, 60, 25],
   });
 
-  content.push({ text: 'Assessoria pedagogica especializada em analise de desempenho ENAMED.', alignment: 'center', fontSize: 10, color: CINZA, margin: [0, 0, 0, 5] });
-  content.push({ text: 'Ajudamos sua instituicao a interpretar os dados e planejar intervencoes efetivas.', alignment: 'center', fontSize: 10, color: CINZA });
+  content.push({ text: `Este relatorio foi gerado para ${escola.nome} com base nos microdados oficiais ENAMED 2025 (INEP).`, alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 5] });
+  content.push({ text: 'A SPR Med oferece assessoria pedagogica especializada para escolas medicas,', alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 2] });
+  content.push({ text: 'incluindo interpretacao de dados, planejamento de intervencoes e capacitacao docente.', alignment: 'center', fontSize: 9, color: CINZA });
 
   // Documento PDF
   const docDefinition: any = {
@@ -620,7 +641,7 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       columns: [
         { text: 'CONFIDENCIAL', bold: true, color: '#C0392B', fontSize: 7, width: 'auto' },
         { text: `  |  ${escola.nome}  |  SPRMed ENAMED 2025  |  Pagina ${currentPage} de ${pageCount}`, fontSize: 7, color: CINZA, width: '*' },
-        { text: 'WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
+        { text: 'Dr. Vinicius Destefani | WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
       ],
       margin: [40, 10, 40, 0],
     }),
