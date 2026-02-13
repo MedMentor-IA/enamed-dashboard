@@ -17,6 +17,12 @@ const ESCOLAS: Record<string, {
   proficiencia: number;
   risco: number;
   percentualRisco: number;
+  conceito?: number;
+  rankNota?: number;
+  rankNotaTotal?: number;
+  rankMec?: number;
+  rankMecTotal?: number;
+  pctProficientes?: number;
 }> = {
   brasil_todos: {
     nome: 'Brasil (Todos)',
@@ -56,7 +62,11 @@ const ESCOLAS: Record<string, {
     nota: 60.56,
     proficiencia: -0.37,
     risco: 31,
-    percentualRisco: 19
+    percentualRisco: 19,
+    conceito: 2,
+    rankNota: 288, rankNotaTotal: 350,
+    rankMec: 304, rankMecTotal: 350,
+    pctProficientes: 47.2
   },
   unifaa: {
     nome: 'UNIFAA',
@@ -66,7 +76,11 @@ const ESCOLAS: Record<string, {
     nota: 64.71,
     proficiencia: -0.13,
     risco: 23,
-    percentualRisco: 10
+    percentualRisco: 10,
+    conceito: 3,
+    rankNota: 188, rankNotaTotal: 350,
+    rankMec: 205, rankMecTotal: 350,
+    pctProficientes: 66.4
   },
   integrado: {
     nome: 'Faculdade Integrado',
@@ -76,7 +90,11 @@ const ESCOLAS: Record<string, {
     nota: 63.39,
     proficiencia: -0.21,
     risco: 58,
-    percentualRisco: 45
+    percentualRisco: 45,
+    conceito: 3,
+    rankNota: 225, rankNotaTotal: 350,
+    rankMec: 223, rankMecTotal: 350,
+    pctProficientes: 64.3
   },
   multivix_vitoria: {
     nome: 'Multivix Vitória',
@@ -86,7 +104,11 @@ const ESCOLAS: Record<string, {
     nota: 66.75,
     proficiencia: -0.02,
     risco: 60,
-    percentualRisco: 43
+    percentualRisco: 43,
+    conceito: 3,
+    rankNota: 149, rankNotaTotal: 350,
+    rankMec: 167, rankMecTotal: 350,
+    pctProficientes: 73.7
   },
   multivix_cachoeiro: {
     nome: 'Faculdade Brasileira de Cachoeiro',
@@ -96,7 +118,11 @@ const ESCOLAS: Record<string, {
     nota: 65.28,
     proficiencia: -0.1,
     risco: 53,
-    percentualRisco: 48
+    percentualRisco: 48,
+    conceito: 4,
+    rankNota: 135, rankNotaTotal: 350,
+    rankMec: 127, rankMecTotal: 350,
+    pctProficientes: 79.2
   },
   slmandic_araras: {
     nome: 'SLMandic Araras',
@@ -106,7 +132,11 @@ const ESCOLAS: Record<string, {
     nota: 56.76,
     proficiencia: -0.58,
     risco: 38,
-    percentualRisco: 45
+    percentualRisco: 45,
+    conceito: 1,
+    rankNota: 337, rankNotaTotal: 350,
+    rankMec: 328, rankMecTotal: 350,
+    pctProficientes: 39.8
   },
   slmandic_campinas: {
     nome: 'SLMandic Campinas',
@@ -116,7 +146,11 @@ const ESCOLAS: Record<string, {
     nota: 62.2,
     proficiencia: -0.27,
     risco: 104,
-    percentualRisco: 54
+    percentualRisco: 54,
+    conceito: 2,
+    rankNota: 252, rankNotaTotal: 350,
+    rankMec: 258, rankMecTotal: 350,
+    pctProficientes: 57.6
   },
   facene_rn: {
     nome: 'FACENE Mossoró',
@@ -126,7 +160,11 @@ const ESCOLAS: Record<string, {
     nota: 60.26,
     proficiencia: -0.39,
     risco: 66,
-    percentualRisco: 52
+    percentualRisco: 52,
+    conceito: 2,
+    rankNota: 294, rankNotaTotal: 350,
+    rankMec: 280, rankMecTotal: 350,
+    pctProficientes: 52.4
   },
   unifoa: {
     nome: 'UNIFOA',
@@ -136,7 +174,11 @@ const ESCOLAS: Record<string, {
     nota: 61.71,
     proficiencia: -0.3,
     risco: 47,
-    percentualRisco: 39
+    percentualRisco: 39,
+    conceito: 2,
+    rankNota: 263, rankNotaTotal: 350,
+    rankMec: 283, rankMecTotal: 350,
+    pctProficientes: 52.1
   },
   emescam: {
     nome: 'EMESCAM',
@@ -146,7 +188,11 @@ const ESCOLAS: Record<string, {
     nota: 69.97,
     proficiencia: 0.17,
     risco: 60,
-    percentualRisco: 44
+    percentualRisco: 44,
+    conceito: 4,
+    rankNota: 80, rankNotaTotal: 350,
+    rankMec: 117, rankMecTotal: 350,
+    pctProficientes: 80.7
   },
   afya_consolidado: {
     nome: 'Afya (Consolidado)',
@@ -166,7 +212,11 @@ const ESCOLAS: Record<string, {
     nota: 71.9,
     proficiencia: 0.28,
     risco: 56,
-    percentualRisco: 47
+    percentualRisco: 47,
+    conceito: 5,
+    rankNota: 45, rankNotaTotal: 350,
+    rankMec: 43, rankMecTotal: 350,
+    pctProficientes: 90.7
   }
 };
 
@@ -786,6 +836,52 @@ export default function EscolaPage() {
             </div>
           </div>
           
+          {/* Rankings e Conceito */}
+          {escola.conceito && (
+          <div className="section">
+            <div className="section-title">Posicionamento Nacional</div>
+            <div className="section-desc">
+              Conceito ENAMED e posição nos <strong>2 rankings oficiais</strong> entre 350 cursos de medicina do Brasil.
+            </div>
+            <div className="cards cards-3">
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div className="card-label">Conceito ENAMED</div>
+                <div className="card-value" style={{
+                  fontSize: 48,
+                  color: escola.conceito >= 4 ? '#22c55e' : escola.conceito === 3 ? '#f59e0b' : '#ef4444'
+                }}>
+                  {escola.conceito}
+                </div>
+                <div className="card-desc">
+                  {escola.conceito === 5 ? 'Excelência' :
+                   escola.conceito === 4 ? 'Muito Bom' :
+                   escola.conceito === 3 ? 'Satisfatório' :
+                   escola.conceito === 2 ? 'Insatisfatório' : 'Crítico'}
+                  {' '}| {escola.pctProficientes}% proficientes
+                </div>
+              </div>
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div className="card-label">Ranking por Nota Geral</div>
+                <div className="card-value" style={{ fontSize: 36 }}>
+                  {escola.rankNota}º <span style={{ fontSize: 18, color: '#888' }}>/ {escola.rankNotaTotal}</span>
+                </div>
+                <div className="card-desc">
+                  Top {(100 - (100 * (escola.rankNota || 0) / (escola.rankNotaTotal || 350))).toFixed(0)}% | Média geral dos alunos (NT_GER)
+                </div>
+              </div>
+              <div className="card" style={{ textAlign: 'center' }}>
+                <div className="card-label">Ranking MEC (% Proficiência)</div>
+                <div className="card-value" style={{ fontSize: 36 }}>
+                  {escola.rankMec}º <span style={{ fontSize: 18, color: '#888' }}>/ {escola.rankMecTotal}</span>
+                </div>
+                <div className="card-desc">
+                  Top {(100 - (100 * (escola.rankMec || 0) / (escola.rankMecTotal || 350))).toFixed(0)}% | % alunos acima do ponto de corte
+                </div>
+              </div>
+            </div>
+          </div>
+          )}
+
           {/* Gráficos de Distribuição */}
           <div className="section">
             <div className="section-title">Distribuição de Performance</div>
