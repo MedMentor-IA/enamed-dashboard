@@ -102,8 +102,8 @@ function buildCoverPage(escola: typeof ESCOLAS[string], filtros: { areaFormacao?
 
   const content: Content[] = [
     { text: '', margin: [0, 120, 0, 0] },
-    { text: 'RELATORIO FILTRO SPRMED', style: 'coverTitle', alignment: 'center' },
-    { text: 'Analise de Desempenho ENAMED 2025', style: 'coverSubtitle', alignment: 'center' },
+    { text: 'RELATÓRIO FILTRO SPRMED', style: 'coverTitle', alignment: 'center' },
+    { text: 'Análise de Desempenho ENAMED 2025', style: 'coverSubtitle', alignment: 'center' },
     { text: '', margin: [0, 20, 0, 0] },
     { canvas: [{ type: 'line', x1: 100, y1: 0, x2: 420, y2: 0, lineWidth: 2, lineColor: VERDE }] },
     { text: '', margin: [0, 20, 0, 0] },
@@ -114,8 +114,8 @@ function buildCoverPage(escola: typeof ESCOLAS[string], filtros: { areaFormacao?
   if (filtros.areaFormacao || filtros.areaConhecimento) {
     content.push({ text: '', margin: [0, 20, 0, 0] });
     content.push({ text: 'Filtros aplicados:', alignment: 'center', fontSize: 11, bold: true, color: CINZA });
-    if (filtros.areaFormacao) content.push({ text: `Area de Formacao: ${filtros.areaFormacao}`, alignment: 'center', fontSize: 11, color: VERDE });
-    if (filtros.areaConhecimento) content.push({ text: `Area de Conhecimento: ${filtros.areaConhecimento}`, alignment: 'center', fontSize: 11, color: VERDE });
+    if (filtros.areaFormacao) content.push({ text: `Área de Formação: ${filtros.areaFormacao}`, alignment: 'center', fontSize: 11, color: VERDE });
+    if (filtros.areaConhecimento) content.push({ text: `Área de Conhecimento: ${filtros.areaConhecimento}`, alignment: 'center', fontSize: 11, color: VERDE });
   }
 
   content.push({ text: '', margin: [0, 30, 0, 0] });
@@ -158,7 +158,7 @@ function buildExecutiveSummary(escola: typeof ESCOLAS[string], questoes: Questao
 
   return [
     { text: 'Sumario Executivo', style: 'sectionTitle' },
-    { text: `Analise detalhada do desempenho da ${escola.nome} (${escola.cidade}/${escola.uf}) no ENAMED 2025, com ${totalQuestoes} questoes.`, style: 'body', margin: [0, 0, 0, 10] },
+    { text: `Análise detalhada do desempenho da ${escola.nome} (${escola.cidade}/${escola.uf}) no ENAMED 2025, com ${totalQuestoes} questões.`, style: 'body', margin: [0, 0, 0, 10] },
     {
       table: { headerRows: 1, widths: ['*', 'auto', '*'], body: tableBody },
       layout: {
@@ -334,7 +334,7 @@ function buildDimensionSection(
   return [
     { text: titulo, style: 'sectionTitle' },
     { text: 'Mapa de Efetividade', fontSize: 10, bold: true, color: CINZA, margin: [0, 0, 0, 3] },
-    { text: 'Eixo X = quantidade de questoes na dimensao. Eixo Y = taxa de acerto (%). Tamanho da bolinha = score de efetividade (prioriza gaps que sao frequentes E tem baixo desempenho). Linha pontilhada = 50% de acerto. Verde >= 70% | Amarelo 50-70% | Vermelho < 50%.', fontSize: 7, italics: true, color: CINZA, margin: [0, 0, 0, 5] },
+    { text: 'Eixo X = quantidade de questões na dimensão. Eixo Y = taxa de acerto (%). Tamanho da bolinha = score de efetividade (prioriza gaps que são frequentes E têm baixo desempenho). Linha pontilhada = 50% de acerto. Verde >= 70% | Amarelo 50-70% | Vermelho < 50%.', fontSize: 7, italics: true, color: CINZA, margin: [0, 0, 0, 5] },
     { image: chart.image, width: 450, margin: [0, 0, 0, 3] },
     { text: chart.legend, fontSize: 7, color: CINZA, margin: [0, 0, 0, 10] },
     {
@@ -357,7 +357,7 @@ function buildDimensionSection(
 function buildQuestionDetail(questoes: Questao[]): Content[] {
   const sorted = [...questoes].sort((a, b) => a.numero - b.numero);
   const content: Content[] = [
-    { text: 'Detalhamento por Questao', style: 'sectionTitle' },
+    { text: 'Detalhamento por Questão', style: 'sectionTitle' },
     { text: `${sorted.length} questoes em ordem crescente (Q1, Q2, Q3...).`, style: 'body', margin: [0, 0, 0, 10] },
   ];
 
@@ -367,7 +367,7 @@ function buildQuestionDetail(questoes: Questao[]): Content[] {
     // Header
     content.push({
       columns: [
-        { text: `Questao ${q.numero}`, bold: true, fontSize: 12, color: AZUL, width: 'auto' },
+        { text: `Questão ${q.numero}`, bold: true, fontSize: 12, color: AZUL, width: 'auto' },
         { text: `${q.taxa_acerto.toFixed(1)}% de acerto`, bold: true, fontSize: 12, color: corTaxa(q.taxa_acerto), width: 'auto', margin: [15, 0, 0, 0] },
         { text: `Gabarito: ${q.gabarito}`, fontSize: 10, color: CINZA, width: 'auto', margin: [15, 2, 0, 0] },
       ],
@@ -498,13 +498,13 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
   content.push(...buildExecutiveSummary(escola, questoesFiltradas));
 
   // Legenda explicativa
-  content.push({ text: 'Como ler as tabelas de dimensao', style: 'sectionTitle' });
+  content.push({ text: 'Como ler as tabelas de dimensão', style: 'sectionTitle' });
   content.push({
     ul: [
-      { text: [{ text: 'Taxa de acerto (%): ', bold: true }, 'total de acertos / total de respostas de todos os alunos em todas as questoes daquela dimensao.'], fontSize: 9, color: CINZA },
-      { text: [{ text: 'Qtd: ', bold: true }, 'numero de questoes da prova classificadas naquela dimensao.'], fontSize: 9, color: CINZA },
-      { text: [{ text: 'Acertadas (>= 50%): ', bold: true, color: VERDE_HEX }, 'numeros das questoes onde a maioria dos alunos acertou (taxa da questao >= 50%).'], fontSize: 9, color: CINZA },
-      { text: [{ text: 'Erradas (< 50%): ', bold: true, color: VERMELHO_HEX }, 'numeros das questoes onde a maioria dos alunos errou (taxa da questao < 50%).'], fontSize: 9, color: CINZA },
+      { text: [{ text: 'Taxa de acerto (%): ', bold: true }, 'total de acertos / total de respostas de todos os alunos em todas as questões daquela dimensão.'], fontSize: 9, color: CINZA },
+      { text: [{ text: 'Qtd: ', bold: true }, 'número de questões da prova classificadas naquela dimensão.'], fontSize: 9, color: CINZA },
+      { text: [{ text: 'Acertadas (>= 50%): ', bold: true, color: VERDE_HEX }, 'números das questões onde a maioria dos alunos acertou (taxa da questão >= 50%).'], fontSize: 9, color: CINZA },
+      { text: [{ text: 'Erradas (< 50%): ', bold: true, color: VERMELHO_HEX }, 'números das questões onde a maioria dos alunos errou (taxa da questão < 50%).'], fontSize: 9, color: CINZA },
     ],
     margin: [0, 0, 0, 10],
   });
@@ -539,7 +539,7 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
 
   content.push({ text: '', pageBreak: 'before' });
   content.push({ text: '', margin: [0, 40, 0, 0] });
-  content.push({ text: 'Duvidas sobre este relatorio?', style: 'coverTitle', alignment: 'center' });
+  content.push({ text: 'Dúvidas sobre este relatório?', style: 'coverTitle', alignment: 'center' });
   content.push({ text: '', margin: [0, 15, 0, 0] });
 
   // Credenciais do Dr. Vinícius
@@ -548,10 +548,12 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       widths: ['*'],
       body: [[{
         stack: [
-          { text: 'Dr. Vinicius C. Destefani', fontSize: 18, bold: true, color: AZUL, alignment: 'center', margin: [0, 15, 0, 4] },
-          { text: 'Medico e Socio-Diretor Pedagogico do SPRMed', fontSize: 12, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
-          { text: 'Mestre em Ensino em Ciencias da Saude', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
-          { text: 'Especialista em analise de desempenho ENAMED e psicometria educacional', fontSize: 10, italics: true, color: CINZA, alignment: 'center', margin: [0, 0, 0, 15] },
+          { text: 'Dr. Vinícius Côgo Destefani', fontSize: 18, bold: true, color: AZUL, alignment: 'center', margin: [0, 15, 0, 6] },
+          { text: 'Sócio-Diretor Pedagógico SPR Med', fontSize: 12, bold: true, color: VERDE, alignment: 'center', margin: [0, 0, 0, 10] },
+          { text: 'Pediatra pela Faculdade de Medicina da USP', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Cardiologista Pediátrico e Intervencionista em Cardiopatias Congênitas', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'Instituto Dante Pazzanese de Cardiologia', fontSize: 11, color: CINZA, alignment: 'center', margin: [0, 0, 0, 3] },
+          { text: 'CRM-SP 158541', fontSize: 10, color: CINZA, alignment: 'center', margin: [0, 0, 0, 15] },
         ],
         fillColor: '#F8F9FA',
       }]],
@@ -582,9 +584,9 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
     margin: [60, 0, 60, 25],
   });
 
-  content.push({ text: `Este relatorio foi gerado para ${escola.nome} com base nos microdados oficiais ENAMED 2025 (INEP).`, alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 5] });
-  content.push({ text: 'A SPR Med oferece assessoria pedagogica especializada para escolas medicas,', alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 2] });
-  content.push({ text: 'incluindo interpretacao de dados, planejamento de intervencoes e capacitacao docente.', alignment: 'center', fontSize: 9, color: CINZA });
+  content.push({ text: `Este relatório foi gerado para ${escola.nome} com base nos microdados oficiais ENAMED 2025 (INEP).`, alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 5] });
+  content.push({ text: 'A SPR Med oferece assessoria pedagógica especializada para escolas médicas,', alignment: 'center', fontSize: 9, color: CINZA, margin: [0, 0, 0, 2] });
+  content.push({ text: 'incluindo interpretação de dados, planejamento de intervenções e capacitação docente.', alignment: 'center', fontSize: 9, color: CINZA });
 
   // Documento PDF
   const docDefinition: any = {
@@ -615,9 +617,9 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
       return items;
     },
     info: {
-      title: `Relatorio Filtro SPRMed - ${escola.nome}`,
+      title: `Relatório Filtro SPRMed - ${escola.nome}`,
       author: 'SPRMed Dashboard ENAMED 2025',
-      subject: `Analise ENAMED 2025 - ${escola.nome}`,
+      subject: `Análise ENAMED 2025 - ${escola.nome}`,
     },
     header: (currentPage: number) => {
       if (currentPage === 1) return null;
@@ -627,7 +629,7 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
           {
             text: [
               { text: 'SPRMed', bold: true, color: AZUL },
-              { text: '  |  Relatorio Filtro ENAMED 2025', color: CINZA },
+              { text: '  |  Relatório Filtro ENAMED 2025', color: CINZA },
             ],
             alignment: 'right',
             fontSize: 8,
@@ -639,8 +641,8 @@ export async function generateReportPdf(params: ReportParams): Promise<void> {
     footer: (currentPage: number, pageCount: number) => ({
       columns: [
         { text: 'CONFIDENCIAL', bold: true, color: '#C0392B', fontSize: 7, width: 'auto' },
-        { text: `  |  ${escola.nome}  |  SPRMed ENAMED 2025  |  Pagina ${currentPage} de ${pageCount}`, fontSize: 7, color: CINZA, width: '*' },
-        { text: 'Dr. Vinicius C. Destefani | WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
+        { text: `  |  ${escola.nome}  |  SPRMed ENAMED 2025  |  Página ${currentPage} de ${pageCount}`, fontSize: 7, color: CINZA, width: '*' },
+        { text: 'Dr. Vinícius C. Destefani | WhatsApp: +55 11 94107-3157', fontSize: 7, color: '#148F77', width: 'auto', alignment: 'right' },
       ],
       margin: [40, 10, 40, 0],
     }),
