@@ -157,6 +157,16 @@ const ESCOLAS: Record<string, {
     proficiencia: -0.29,
     risco: 5,
     percentualRisco: 0
+  },
+  einstein: {
+    nome: 'Albert Einstein',
+    cidade: 'São Paulo',
+    uf: 'SP',
+    alunos: 118,
+    nota: 71.9,
+    proficiencia: 0.28,
+    risco: 56,
+    percentualRisco: 47
   }
 };
 

@@ -137,6 +137,15 @@ const ESCOLAS = [
     alunos: 2870,
     nota: 61.92,
     proficiencia: -0.29
+  },
+  {
+    id: 'einstein',
+    nome: 'Albert Einstein',
+    cidade: 'São Paulo',
+    uf: 'SP',
+    alunos: 118,
+    nota: 71.9,
+    proficiencia: 0.28
   }
 ];
 
